@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>HCTPL » Calendar</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="hctpl.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- H E A D E R -->
+
+    <!-- top navigation -->
+
+    <div class="container-fluid hidden-print" style="background: #1f3f84;">
+        <div class="row">
+
+            <!-- mobile -->
+
+            <div class="hidden-md hidden-lg col-sm-12" style="padding-top: 10px;padding-bottom:10px;">
+                <ul class="nav nav-pills nav-justified">
+                    <li role="presentation"><a href="#">Menu  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 12px; color: rgba(255,255,255,0.6)"></span></a></li>
+                </ul>
+            </div>
+
+            <!-- desktop -->
+
+            <div class="hidden-xs hidden-sm col-md-12" style="padding-top: 10px;padding-bottom:10px;">
+                <ul class="nav nav-pills nav-justified">
+                    <li role="presentation" class=""><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Collection & Resources  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 12px; color: rgba(255,255,255,0.6)"></span></a></li>
+                    <li role="presentation"><a href="#">Community  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 12px; color: rgba(255,255,255,0.6)"></span></a></li>
+                    <li role="presentation"><a href="#">About  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size: 12px; color: rgba(255,255,255,0.6)"></span></a></li>
+                    <li role="presentation" class="active"><a href="#">Calendar</a></li>
+                    <li role="presentation"><a href="#">News & Blog</a></li>
+                    <li role="presentation"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- logo + hours banner -->
+
+    <div class="container-fluid hidden-print" style="background: #3155a4; background-image: url(hctpl_header.jpg); background-position: right; background-size: contain; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+                <div class="col-xs-12 col-sm-4">
+                    <img alt="Brand" src="img/sitelogo_white.png" width="250px">
+                </div>
+                <div class="col-xs-12 hidden-md hidden-lg" style="height: 20px;"></div>
+                <div class="col-xs-12 col-sm-8">
+                    <p style="font-size: 28px; font-weight: 900; color: rgba(255,255,255,0.5);text-align: right; line-height: 1.1em;">Today's Hours</p>
+                    <div id="hhours" style="font-size: 18px; font-weight: 400; color: #fff;text-align: right"></div>
+                    <div id="mhours" style="font-size: 18px; font-weight: 400; color: #fff;text-align: right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search bar -->
+
+    <div class="container-fluid hidden-print" style="padding-top: 20px;padding-bottom: 20px; background: rgba(49, 85, 164, 0.3)">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Search our collection" style="border-bottom-left-radius: 50px; border-top-left-radius: 50px; border: 0px solid #000;">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary hidden-xs" type="button" style="border-bottom-right-radius: 50px; border-top-right-radius: 50px; border: 0px solid #000;"><span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 14px; padding-right: 5px;"></span> Search</button>
+                        <button class="btn btn-primary hidden-sm hidden-md hidden-lg" type="button" style="border-bottom-right-radius: 50px; border-top-right-radius: 50px; border: 0px solid #000;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="height: 20px;"></div>
+                <div class="col-xs-12 col-sm-2">
+                    <button class="btn btn-primary btn-lg btn-block" type="button" style="border-radius: 25px;">Catalog</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- P A G E B O D Y -->
+
+    <div class="container" style="margin-bottom: 100px;">
+        <div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+            <div class="col-xs-12">
+                <h1 style="text-align: center;">August</h1>
+            </div>
+            <div class="col-xs-6">
+                <button type="button" class="btn btn-default" disabled="disabled">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-6">
+                <button type="button" class="btn btn-default pull-right">
+                    Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="row hidden-xs">
+            <div class="col-xs-12 col-sm-2" style="text-align: center; background: rgba(49, 85, 164, 0.2);">
+                <h3 style="padding-bottom: 10px;">MON</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2" style="text-align: center; background: rgba(49, 85, 164, 0.2);">
+                <h3 style="padding-bottom: 10px;">TUE</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2" style="text-align: center; background: rgba(49, 85, 164, 0.2);">
+                <h3 style="padding-bottom: 10px;">WED</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2" style="text-align: center; background: rgba(49, 85, 164, 0.2);">
+                <h3 style="padding-bottom: 10px;">THU</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2" style="text-align: center; background: rgba(49, 85, 164, 0.2);">
+                <h3 style="padding-bottom: 10px;">FRI</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2" style="text-align: center; background: rgba(49, 85, 164, 0.2);">
+                <h3 style="padding-bottom: 10px;">SAT/SUN</h3>
+            </div>
+        </div>
+        <div class="row" style="border-bottom: 2px solid #eee; padding-bottom: 20px;">
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right; color: #dddddd;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">MON -</small> 31</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">TUE -</small> 1</h3>
+                <button class="btn btn-primary btn-sm dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: left">
+                    9 a.m. Event Title
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Teens</a></li>
+                    <li><a><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Huntington Main Library</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>This is where the program description goes.</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">WED -</small> 2</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">THU -</small> 3</h3>
+                <button class="btn btn-primary btn-sm dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: left">
+                    9 a.m. Event Title
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Teens</a></li>
+                    <li><a><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Huntington Main Library</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>This is where the program description goes.</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">FRI -</small> 4</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">SAT -</small> 5</h3>
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px; color: #ccc;"><small class="hidden-sm hidden-md hidden-lg">SUN -</small> 6</h3>
+
+            </div>
+        </div>
+
+        <div class="row" style="border-bottom: 2px solid #eee; padding-bottom: 20px;">
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">MON -</small> 7</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">TUE -</small> 8</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">WED -</small> 9</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">THU -</small> 10</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">FRI -</small> 11</h3>
+                <button class="btn btn-primary btn-sm dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: left">
+                    9 a.m. Event Title
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Teens</a></li>
+                    <li><a><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Huntington Main Library</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>This is where the program description goes.</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">SAT -</small> 12</h3>
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px; color: #ccc;"><small class="hidden-sm hidden-md hidden-lg">SUN -</small> 13</h3>
+
+            </div>
+        </div>
+        <div class="row" style="border-bottom: 2px solid #eee; padding-bottom: 20px;">
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">MON -</small> 14</h3>
+                <button class="btn btn-primary btn-sm dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: left">
+                    9 a.m. Event Title
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Teens</a></li>
+                    <li><a><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Huntington Main Library</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>This is where the program description goes.</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">TUE -</small> 15</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">WED -</small> 16</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">THU -</small> 17</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">FRI -</small> 18</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">SAT -</small> 19</h3>
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px; color: #ccc;"><small class="hidden-sm hidden-md hidden-lg">SUN -</small> 20</h3>
+
+            </div>
+        </div>
+        <div class="row" style="border-bottom: 2px solid #eee; padding-bottom: 20px;">
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">MON -</small> 21</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">TUE -</small> 22</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">WED -</small> 23</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">THU -</small> 24</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">FRI -</small> 25</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">SAT -</small> 26</h3>
+                <button class="btn btn-primary btn-sm dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: left">
+                    9 a.m. Event Title
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Teens</a></li>
+                    <li><a><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Huntington Main Library</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a>This is where the program description goes.</a></li>
+                </ul>
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px; color: #ccc;"><small class="hidden-sm hidden-md hidden-lg">SUN -</small> 27</h3>
+            </div>
+        </div>
+        <div class="row" style="border-bottom: 2px solid #eee; padding-bottom: 20px;">
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">MON -</small> 28</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">TUE -</small> 29</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">WED -</small> 30</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">THU -</small> 31</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right; color: #dddddd;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">FRI -</small> 1</h3>
+
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right; color: #dddddd;padding-right:10px;"><small class="hidden-sm hidden-md hidden-lg">SAT -</small> 2</h3>
+                <h3 style="border-bottom: 2px dotted #eeeeee;text-align: right; color: #dddddd;padding-right:10px; color: #ccc;"><small class="hidden-sm hidden-md hidden-lg">SUN -</small> 3</h3>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- F O O T E R  -->
+
+    <div class="container-fluid hidden-print" style="background: #3155a4;">
+        <div class="container">
+            <div class="row" style="margin-top: 50px;margin-bottom: 50px;">
+                <div class="col-xs-12 col-sm-3">
+                    <h3 style="color: #fff; border-bottom: 1px solid #fff; padding-bottom: 10px;">Library Mission</h3>
+                    <p style="color: #fff; font-size: 32px; font-weight: 400; font-style: italic;">Your destination <br>to learn, <br>to discover, <br>to gather, <br>to grow.</p>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <h3 style="color: #fff; border-bottom: 1px solid #fff; padding-bottom: 10px;">Huntington Library</h3>
+                    <dl>
+                        <dt style="color: #fff;"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <b>Address</b></dt>
+                        <dd style="color: #fff;">255 W Park Dr<br>Huntington, IN 46750<br>P: (260) 356-0824<br>F: (260)356-3073</dd>
+                        <dt style="color: #fff; padding-top: 20px;"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <b>Hours</b></dt>
+                        <dd style="color: #fff;">Mon-Thu: 9 a.m. - 8 p.m.<br>Fri & Sat: 9 a.m. - 5 p.m.<br>Sunday: Closed</dd>
+                    </dl>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <h3 style="color: #fff; border-bottom: 1px solid #fff; padding-bottom: 10px;">Markle Branch Library</h3>
+                    <dl>
+                        <dt style="color: #fff;"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <b>Address</b></dt>
+                        <dd style="color: #fff;">155 W Sparks St<br>Markle, IN 46770<br>P & F: (260) 758-3332</dd>
+                        <dt style="color: #fff; padding-top: 20px;"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <b>Hours</b></dt>
+                        <dd style="color: #fff;">Mon, Wed, Fri: 12 p.m. - 7 p.m.<br>Tue, Thu, Sat: 10 a.m. - 4 p.m.<br>Sunday: Closed</dd>
+                    </dl>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <h3 style="color: #fff; border-bottom: 1px solid #fff; padding-bottom: 10px;">Quick Links</h3>
+                    <div class="btn-group-vertical btn-block" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default" style="color: #fff; text-align: left; background: none; border-top: none; border-left: none; border-right: none; border-radius: 0; border-bottom: 1px dotted rgba(255,255,255,0.3)">Link 1 <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default" style="color: #fff; text-align: left; background: none; border-top: none; border-left: none; border-right: none; border-radius: 0; border-bottom: 1px dotted rgba(255,255,255,0.3)">Link 2 <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default" style="color: #fff; text-align: left; background: none; border-top: none; border-left: none; border-right: none; border-radius: 0; border-bottom: 1px dotted rgba(255,255,255,0.3)">Link 3 <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default" style="color: #fff; text-align: left; background: none; border-top: none; border-left: none; border-right: none; border-radius: 0; border-bottom: 1px dotted rgba(255,255,255,0.3)">Link 4 <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default" style="color: #fff; text-align: left; background: none; border-top: none; border-left: none; border-right: none; border-radius: 0; border-bottom: 1px dotted rgba(255,255,255,0.3)">Link 5 <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="hours.js"></script>
+</body>
+
+</html>
