@@ -6,12 +6,35 @@ html {
   font-weight: bold;
 }
 
+.bg-brand {
+  background-color: #3155a4;
+}
+
+.bg-dark {
+  background-color: #1a3b81;
+}
+
+.bg-green {
+  background-color: #a3e35e;
+}
+
+.brand {
+  color: #3155a4;
+}
+
+.dark {
+  color: #1a3b81;
+}
+
+.white {
+  color: white;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 40px;
-  margin: 0;
-  background-color: #1a3b81;
+  margin: -8px -8px 0 -8px;
 }
 
 nav a {
