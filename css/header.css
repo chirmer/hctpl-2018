@@ -99,6 +99,21 @@ nav p#contact a:hover {
   color: white;
 }
 
+.nav-service {
+}
+
+.nav-service-drop {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0,7);
+}
+
+.nav-service:hover .nav-service-drop {
+  display: flex;
+}
+
 /* MEDIA QUERIES */
 
 /* Bigger than cell phones */
