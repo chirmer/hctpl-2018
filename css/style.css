@@ -13,6 +13,8 @@ html {
 
 .bg-dark {
   background-color: #1a3b81;
+  margin: -8px -8px 0 -8px;
+  height: 80px;
 }
 
 .bg-green {
@@ -31,11 +33,22 @@ html {
   color: white;
 }
 
-nav {
+#nav-full {
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
-  margin: -8px -8px 0 -8px;
+  flex-wrap: wrap;
+  padding: 0 25px;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+  height: 80px;
+}
+
+#nav-small {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 nav a {
@@ -44,12 +57,41 @@ nav a {
   font-size: 18px;
 }
 
+nav .fa {
+  opacity: 0.6;
+}
+
+#contact {
+  background-color: #a3e35e;
+  align-items: stretch;
+  padding: 15px 25px 17px 25px;
+  border-radius: 65px;
+}
+
+#contact .fa {
+  opacity: 1;
+}
+
 nav a:hover {
   border-bottom: 2px solid white;
 }
 
-.btn-filled {
-  color: white;
-  background-color: #3155a4;
-  border-radius: 10px;
+.small {
+  font-size: 0.85em!important;
+}
+
+/* MEDIA QUERIES */
+
+/* Bigger than cell phones */
+@media (min-width: 701px) {
+  #nav-small {
+    display: none;
+  }
+}
+
+/* Cell phones */
+@media (max-width: 700px) {
+  #nav-full {
+    display: none;
+  }
 }
