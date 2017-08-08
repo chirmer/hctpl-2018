@@ -3,36 +3,6 @@ html {
   background-color: #3155a4;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.bg-dark {
-  background-color: #1a3b81;
-  margin: -8px -8px 0 -8px;
-  height: 80px;
-}
-
-.bg-green {
-  background-color: #a3e35e;
-}
-
-.brand {
-  color: #3155a4;
-}
-
-.dark {
-  color: #1a3b81;
-}
-
-.white {
-  color: white;
-}
-
 #nav-full {
   display: flex;
   justify-content: space-between;
@@ -51,7 +21,7 @@ html {
   padding: 10px;
 }
 
-nav a {
+nav p, nav a {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -95,17 +65,51 @@ nav p#contact a:hover {
   border-bottom: 0px solid #89c846;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-dark {
+  background-color: #1a3b81;
+  margin: -8px -8px 0 -8px;
+  height: 80px;
+}
+
+.bg-active {
+  background-color: #a3e35e;
+}
+
+.brand {
+  color: #3155a4;
+}
+
+.active {
+  color: #a3e35e;
+}
+
+.dark {
+  color: #1a3b81;
+}
+
+.white {
+  color: white;
+}
+
 /* MEDIA QUERIES */
 
 /* Bigger than cell phones */
-@media (min-width: 701px) {
+@media (min-width: 801px) {
   #nav-small {
     display: none;
   }
 }
 
 /* Cell phones */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #nav-full {
     display: none;
   }
