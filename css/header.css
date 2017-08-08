@@ -65,7 +65,14 @@ nav .fa {
   background-color: #a3e35e;
   align-items: stretch;
   padding: 15px 25px 17px 25px;
-  border-radius: 65px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+#contact:hover {
+  box-shadow: none;
+  background-color: #89c846;
+  text-shadow: none;
 }
 
 #contact .fa {
@@ -78,6 +85,14 @@ nav a:hover {
 
 .small {
   font-size: 0.85em!important;
+}
+
+p#contact {
+  text-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+
+nav p#contact a:hover {
+  border-bottom: 0px solid #89c846;
 }
 
 /* MEDIA QUERIES */
