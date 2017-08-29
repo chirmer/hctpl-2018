@@ -63,7 +63,7 @@
                 <!-- Services Dropdown -->
                 <div class="dropdown">
                   <a class="nav-link dropdown-toggle text-white"
-                  data-toggle="dropdown" href="#">Services</a>
+                   data-toggle="dropdown" href="#">Services</a>
                     <div class="dropdown-menu">
                       <h6 class="dropdown-header">OUR COLLECTION</h6>
                       <a class="dropdown-item" href="collection.html">Books, Movies, Music &amp;
@@ -121,10 +121,10 @@
     <div class="container-fluid bg-brand">
       <div class="container bg-brand">
         <div class="row align-items-center" id="logo-hours">
-          <div class="col-auto mr-auto" id="logo">
+          <div class="col-xs-12 col-md-6 text-center text-md-left" id="logo">
             <img src="resources/img/sitelogo_white.png" height="90px" />
           </div>
-          <div class="col-auto" id="hours">
+          <div class="col-xs-12 col-md-6 text-center text-md-right" id="hours">
             <h3 class="white">Today's Hours</h3>
             <div id="hhours" class="white"></div>
             <div id="mhours" class="white"></div>
@@ -143,58 +143,272 @@
               <input class="form-control form-control-lg" type="text"
               placeholder="Title, author, artist, etc.">
             </div>
-            <div class="col">
+            <div class="col-xs-6 col">
               <button type="submit"
               class="btn btn-primary btn-lg btn-block">Search Collection</button>
             </div>
-            <div class="col">
+            <div class="col-xs-6 col">
             <button type="submit"
-            class="btn btn-outline-primary btn-lg btn-block">Search Website</button>
+            class="btn btn-outline-light btn-lg btn-block">Search Website</button>
             </div>
           </div>
         </form>
       </div>
 
-      <!-- Page Body -->
-      <div class="container bottom-corner-round bg-white" id="page-content">
-        <div class="row">
-          <div class="col-xs-12 col-lg-8" id="main-body">
-            <h1>Welcome to the Huntington City-Township Public Library.</h1>
-            <p>
-              Rub face on everything chase imaginary bugs so stretch yet play time,
-              intently sniff hand, chew iPad power cord. Intently sniff hand stick
-              butt in face claw drapes hate dog. Hide when guests come over throwup
-              on your pillow yet intrigued by the shower leave hair everywhere for
-              sun bathe. Climb leg attack feet why must they do that. Sweet beast
-              claw drapes but sleep on keyboard but play time intently stare at
-              the same spot stretch. Under the bed destroy couch, or hunt anything
-              that moves. Claw drapes. Nap all day flop over attack feet why must
-              they do that chase imaginary bugs nap all day. Hopped up on goofballs
-              destroy couch flop over and sleep on keyboard. Cat snacks cat snacks
-              yet swat at dog yet why must they do that chase imaginary bugs chew
-              iPad power cord.
-            </p>
-            <h2 class="page-content-top-margin">Latest Blog Posts</h2>
-            
-          </div>
-          <!-- Sidebar -->
-          <div class="col" id="sidebar">
-            <h2>Quick Links</h2>
-            <p>Quickly find what you're looking for.</p>
-            <ul class="list-group">
-              <li class="list-group-item"><a href="#">Cras justo odio →</a></li>
-              <li class="list-group-item"><a href="#">Dapibus ac facilisis in →</a></li>
-              <li class="list-group-item"><a href="#">Morbi leo risus →</a></li>
-              <li class="list-group-item"><a href="#">Porta ac consectetur ac →</a></li>
-              <li class="list-group-item"><a href="#">Vestibulum at eros →</a></li>
-              <li class="list-group-item"><a href="#">Cras justo odio →</a></li>
-              <li class="list-group-item"><a href="#">Dapibus ac facilisis in →</a></li>
-              <li class="list-group-item"><a href="#">Morbi leo risus →</a></li>
-              <li class="list-group-item"><a href="#">Porta ac consectetur ac →</a></li>
-              <li class="list-group-item"><a href="#">Vestibulum at eros →</a></li>
-            </ul>
+
+
+      <!-- Events -->
+
+      <!-- Library Card Signup Month -->
+      <div class="modal fade" id="lib-card-signup" tabindex="-1" role="dialog"
+      aria-labelledby="lib-card-signup" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="lib-card-signup">Library Card Signup Month</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Time -->
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+                <div class="col-11">
+                  September 1-30.<br />
+                </div>
+              </div>
+              <!-- Location -->
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="col-11">
+                  Huntington Main Library<br />
+                  255 W Park Dr, Huntington, IN 46750<br />
+                  <a href="https://goo.gl/maps/XLthRLFieY12" target="_blank">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    &nbsp;Directions</a><br />
+                  Markle Branch Library<br />
+                  155 W Sparks St, Markle, IN 46770<br />
+                  <a href="https://goo.gl/maps/fXzzof6VZf72" target="_blank">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    &nbsp;Directions</a>
+                </div>
+              </div>
+              <!-- Ages -->
+              <div class="row">
+                <div class="col-1">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="col-11">
+                  All ages<br />
+                </div>
+              </div>
+              <hr>
+              <p>
+                Make sure you have your library card this month as we and many
+                community businesses celebrate with discounts for library card
+                holders! Show your library card to the below-listed businesses for
+                a variety of discounts all month long.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
+      </div>
+
+
+
+      <!-- Page Body -->
+      <div class="container bottom-corner-round bg-white" id="page-content">
+        <!-- Weekday Header -->
+        <div class="row cal-weekdays">
+          <div class="col text-center">
+            <strong>SUN</strong>
+          </div>
+          <div class="col text-center">
+            <strong>MON</strong>
+          </div>
+          <div class="col text-center">
+            <strong>TUE</strong>
+          </div>
+          <div class="col text-center">
+            <strong>WED</strong>
+          </div>
+          <div class="col text-center">
+            <strong>THU</strong>
+          </div>
+          <div class="col text-center">
+            <strong>FRI</strong>
+          </div>
+          <div class="col text-center">
+            <strong>SAT</strong>
+          </div>
+        </div>
+
+        <div class="row flex wrap">
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Sunday - </span>27</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Monday - </span>28</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Tuesday - </span>29</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Wednesday - </span>30</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Thursday - </span>31</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Friday - </span>1</h6>
+
+            <button type="button" class="btn btn-primary btn-sm btn-block text-left cal-btn"
+            data-toggle="modal" data-target="#lib-card-signup">
+              Library Card Signup Month Begins!
+            </button>
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Saturday - </span>2</h6>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Sunday - </span>3</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Monday - </span>4</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Tuesday - </span>5</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Wednesday - </span>6</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Thursday - </span>7</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Friday - </span>8</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Saturday - </span>9</h6>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Sunday - </span>10</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Monday - </span>11</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Tuesday - </span>12</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Wednesday - </span>13</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Thursday - </span>14</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Friday - </span>15</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Saturday - </span>16</h6>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Sunday - </span>17</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Monday - </span>18</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Tuesday - </span>19</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Wednesday - </span>20</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Thursday - </span>21</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Friday - </span>22</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Saturday - </span>23</h6>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Sunday - </span>24</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Monday - </span>25</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Tuesday - </span>26</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Wednesday - </span>27</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Thursday - </span>28</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Friday - </span>29</h6>
+
+          </div>
+          <div class="col">
+            <h6 class="cal-date"><span class="small-date">Saturday - </span>30</h6>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
