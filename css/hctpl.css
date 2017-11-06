@@ -69,18 +69,6 @@ header img {
   height: 48px;
 }
 
-main {
-  background-color: #eee;
-}
-
-main .container {
-  z-index: 10;
-  margin: -80px auto 40px auto;
-  background-color: white;
-  padding: 40px;
-  border-radius: 3px;
-}
-
 #menu-main {
   display: none;
   background-color: rgba(0, 0, 0, 0.4);
@@ -92,7 +80,9 @@ main .container {
 
 #menu-main div.flex-column, footer nav .flex-column {
   width: 300px;
+  min-width: 150px;
   margin-right: 10px;
+  flex-wrap: wrap;
 }
 
 #menu-main div.flex-column:last-child, footer nav .flex-column:last-child {
@@ -120,7 +110,59 @@ main .container {
   text-decoration: none;
 }
 
-footer {
+#mobile-links {
+  display: none;
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+  color: #3155a4;
+  margin-bottom: 60px;
+}
+
+main {
+  background-color: #eee;
+}
+
+main .container {
+  z-index: 10;
+  margin: -80px auto 40px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 3px;
+}
+
+main .fa-facebook-square, main .fa-twitter-square, main .fa-pinterest-square {
+  margin-left: 10px;
+  opacity: 0.6;
+}
+
+main .fa-facebook-square:hover {
+  opacity: 1;
+  color: #3b5598;
+  cursor: pointer;
+}
+
+main .fa-twitter-square:hover {
+  opacity: 1;
+  color: #1da1f2;
+  cursor: pointer;
+}
+main .fa-pinterest-square:hover {
+  opacity: 1;
+  color: #bd081c;
+  cursor: pointer;
+}
+
+main section {
+  width: 65%;
+  margin-right: 50px;
+}
+
+main aside {
+  width: 35%;
+}
+
+footer.flex {
   background-color: #eee;
 }
 
@@ -146,11 +188,61 @@ footer a:hover {
   color: black;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   #logo-desktop {
     display: none;
   }
   #logo-mobile {
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+
+  .container {
+    width: 94%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  #menu-top a {
+    padding: 30px 15px;
+    font-size: 0.8em;
+    margin-right: 0;
+  }
+
+  header {
+    min-height: 175px;
+  }
+
+  #menu-main, footer nav, main .container .flex {
+    flex-direction: column;
+  }
+
+  #menu-main div.flex-column, footer nav .flex-column,
+  #menu-main div.flex-column:last-child, footer nav .flex-column:last-child {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #menu-main h3, footer nav h3 {
+    margin-top: 20px;
+  }
+
+  #mobile-links {
+    display: flex;
+  }
+
+  main section, main aside {
+    width: 100%;
+  }
+
+  main aside {
+    margin-top: 40px;
   }
 }

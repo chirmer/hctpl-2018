@@ -16,48 +16,77 @@
         <img id="logo-desktop" src="resources/img/logo.svg" alt="Huntington City-Township Public Library">
         <img id="logo-mobile" src="resources/img/logo_white.svg" alt="Huntington City-Township Public Library">
         <nav id="menu-top" class="flex">
-          <a href="#">Events</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact Us</a>
+          <a href="calendar.html" class="hide-mobile">Events</a>
+          <a href="blog.html" class="hide-mobile">Blog</a>
+          <a href="contact.html" class="hide-mobile">Contact Us</a>
           <a id="btn-menu-main" onclick="menuMainShow();">Menu&nbsp;
             <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
           <!--<a><i class="fa fa-search" aria-hidden="true"></i>&nbsp; Search</a>-->
         </nav>
       </div>
       <nav id="menu-main" class="flex container justify-between">
+        <div id="mobile-links" class="flex flex-column">
+          <a href="calendar.html">Events &amp; Workshop Calendar</a>
+          <a href="blog.html">Library Blog</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
         <div class="flex flex-column">
           <h3>Collection</h3>
-          <a href="#">Books, Movies, Music &amp; More</a>
-          <a href="#">NIDL - eBooks &amp; eAudio</a>
-          <a href="#">Genealogy &amp; the Indiana Room</a>
+          <a href="collection.html">Books, Movies, Music &amp; More</a>
+          <a href="ebooks.html">NIDL - eBooks &amp; eAudio</a>
+          <a href="genealogy.html">Genealogy &amp; the Indiana Room</a>
         </div>
         <div class="flex flex-column">
           <h3>Resources</h3>
-          <a href="#">Public Computers, Copier &amp; Fax</a>
-          <a href="#">Meeting &amp; Study Rooms</a>
-          <a href="#">Online Tools &amp; Resources</a>
-          <a href="#">Job &amp; Unemployment Tools</a>
+          <a href="computers-copier-fax.html">Public Computers, Copier &amp; Fax</a>
+          <a href="meeting-rooms.html">Meeting &amp; Study Rooms</a>
+          <a href="online-tools.html">Online Tools &amp; Resources</a>
+          <a href="job-tools.html">Job &amp; Unemployment Tools</a>
         </div>
         <div class="flex flex-column">
           <h3>Community</h3>
-          <a href="#">New Resident Resources</a>
-          <a href="#">Huntington Links</a>
-          <a href="#">Markle Links</a>
+          <a href="new-resident.html">New Resident Resources</a>
+          <a href="community.html">Huntington Links</a>
+          <a href="markle.html">Markle Links</a>
         </div>
         <div class="flex flex-column">
           <h3>About Us</h3>
-          <a href="#">About the Library</a>
-          <a href="#">Markle Branch Library</a>
-          <a href="#">Library Policies</a>
-          <a href="#">Board of Trustees</a>
+          <a href="about.html">About the Library</a>
+          <a href="markle.html">Markle Branch Library</a>
+          <a href="policies.html">Library Policies</a>
+          <a href="board.html">Board of Trustees</a>
         </div>
       </nav>
     </header>
 
     <main class="flex">
       <div class="flex container flex-column">
-        <p class="crumb">Home</p>
-        <h1>Welcome to the Huntington City-Township Public Library.</h1>
+        <div class="flex justify-between">
+          <p class="crumb">Home</p>
+          <!--<div class="flex">
+            <p class="crumb">Share: </p>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+          </div>-->
+        </div>
+        <h1 class="display-4">Your destination to learn, to discover, to gather, to grow.</h1>
+        <div class="flex">
+          <section class="flex flex-column">
+            The Huntington City-Township Public Library serves the city of Huntington,
+            Huntington Township, and the town of Markle (through the Markle Branch),
+            bringing a collection of over 160,000 books, movies, music CDs, videogames,
+            and more to its patrons. The library also provides free digital eBook and
+            eAudio content through the Northeast Indiana Digital Library consortium,
+            hands-on and one-on-one instruction through a variety of workshops and classes,
+            free access to a variety of online tools and resources, local history and
+            genealogy support through the Indiana Room, and more.
+          </section>
+          <aside class="flex flex-column">
+            <h3>Quick Links</h3>
+
+          </aside>
+        </div>
       </div>
     </main>
 
@@ -65,29 +94,29 @@
       <nav class="flex container justify-between">
         <div class="flex flex-column">
           <h3>Collection</h3>
-          <a href="#">Books, Movies, Music &amp; More</a>
-          <a href="#">NIDL - eBooks &amp; eAudio</a>
-          <a href="#">Genealogy &amp; the Indiana Room</a>
+          <a href="collection.html">Books, Movies, Music &amp; More</a>
+          <a href="ebooks.html">NIDL - eBooks &amp; eAudio</a>
+          <a href="genealogy.html">Genealogy &amp; the Indiana Room</a>
         </div>
         <div class="flex flex-column">
           <h3>Resources</h3>
-          <a href="#">Public Computers, Copier &amp; Fax</a>
-          <a href="#">Meeting &amp; Study Rooms</a>
-          <a href="#">Online Tools &amp; Resources</a>
-          <a href="#">Job &amp; Unemployment Tools</a>
+          <a href="computers-copier-fax.html">Public Computers, Copier &amp; Fax</a>
+          <a href="meeting-rooms.html">Meeting &amp; Study Rooms</a>
+          <a href="online-tools.html">Online Tools &amp; Resources</a>
+          <a href="job-tools.html">Job &amp; Unemployment Tools</a>
         </div>
         <div class="flex flex-column">
           <h3>Community</h3>
-          <a href="#">New Resident Resources</a>
-          <a href="#">Huntington Links</a>
-          <a href="#">Markle Links</a>
+          <a href="new-resident.html">New Resident Resources</a>
+          <a href="community.html">Huntington Links</a>
+          <a href="markle.html">Markle Links</a>
         </div>
         <div class="flex flex-column">
           <h3>About Us</h3>
-          <a href="#">About the Library</a>
-          <a href="#">Markle Branch Library</a>
-          <a href="#">Library Policies</a>
-          <a href="#">Board of Trustees</a>
+          <a href="about.html">About the Library</a>
+          <a href="markle.html">Markle Branch Library</a>
+          <a href="policies.html">Library Policies</a>
+          <a href="board.html">Board of Trustees</a>
         </div>
       </nav>
     </footer>
