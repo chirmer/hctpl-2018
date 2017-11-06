@@ -1,271 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://use.fontawesome.com/2b29aa9a6e.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700,700i"
-    rel="stylesheet">
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
-    <link href="css/bootstrap-reboot.css" type="text/css" rel="stylesheet" />
-    <link href="css/bootstrap-grid.css" type="text/css" rel="stylesheet" />
-    <link href="css/hctpl.css" type="text/css" rel="stylesheet" />
-    <title>Welcome - HCTPL</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/hctpl.css" type="text/css" rel="stylesheet">
+    <title>Huntington City-Township Public Library</title>
   </head>
   <body>
 
-    <header class="bg-dark">
-      <!-- Navigation Menu -->
-      <div class="container-fluid bg-brand-dark bg-dark top-nav"> <!-- Overall BG -->
-        <div class="container bg-dark"> <!-- Menu w/in page width -->
-          <div class="collapse bg-dark text-white" id="contactUsHidden">
-            <h2 style="padding-top: 30px; margin-bottom: -20px;">Contact Us</h2>
-            <div class="row" style="padding: 40px 0;">
-              <div class="col-xs-12 col-md-6">
-                <p>Have a question? Need genealogy assistance? Ask by contacting
-                  us below or filling out the form on the right - one of our
-                  librarians will get back with you!</p>
-                <div class="row flex">
-                  <div class="col">
-                    <h5>Huntington Main Library</h5>
-                    <p>255 W Park Dr<br />Huntington, IN 46750<br />
-                    <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;Phone: (260) 356-0824<br />
-                    <i class="fa fa-fax" aria-hidden="true"></i> &nbsp;Fax: (260) 356-3073<br />
-                    <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;Email: ask@hctpl.info</p>
-                  </div>
-                  <div class="col">
-                    <h5>Markle Branch Library</h5>
-                    <p>155 W Sparks St<br />Markle, IN 46770<br />
-                    <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;Phone &amp; Fax: (260) 758-3332<br />
-                    <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;Email: markle@hctpl.info</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <form>
-                  <input type="text" class="form-control" placeholder="Your Name">
-                  <input type="email" class="form-control" id="contactEmail"
-                  placeholder="name@example.com">
-                  <input type="text" class="form-control" placeholder="Message Subject">
-                  <textarea class="form-control" id="contactQuestionBody"
-                  placeholder="Type your message here" rows="4"></textarea>
-                  <button type="submit" class="btn btn-primary float-right">
-                    Send Message</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <nav class="navbar navbar-dark bg-dark justify-content-between">
-                <a class="nav-link text-white" href="index.html">Home</a>
-                <!-- Services Dropdown -->
-                <div class="dropdown">
-                  <a class="nav-link dropdown-toggle text-white"
-                  data-toggle="dropdown" href="#">Services</a>
-                    <div class="dropdown-menu">
-                      <h6 class="dropdown-header">OUR COLLECTION</h6>
-                      <a class="dropdown-item" href="collection.html">Books, Movies, Music &amp;
-                      More</a>
-                      <a class="dropdown-item" href="ebooks.html">eBooks &amp; eAudiobooks</a>
-                      <h6 class="dropdown-header">AT THE LIBRARY</h6>
-                      <a class="dropdown-item" href="computers-copier-fax.html">Public Computers, Copier,
-                      &amp; Fax</a>
-                      <a class="dropdown-item" href="meeting-rooms.html">Meeting &amp; Study Rooms</a>
-                      <a class="dropdown-item" href="genealogy.html">Genealogy &amp; the Indiana
-                      Room</a>
-                      <a class="dropdown-item" href="online-tools.html">Online Tools &amp; Resources</a>
-                    </div>
-                  </div>
-                <!-- Top-Level Items -->
-                <a class="nav-link text-white" href="calendar.html">Calendar</a>
-                <a class="nav-link text-white" href="blog.html">Blog</a>
-                <!-- Community Dropdown -->
-                <div class="dropdown">
-                  <a class="nav-link dropdown-toggle text-white"
-                  data-toggle="dropdown" href="#">Community</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="card-discounts.html">National Library Card Signup
-                      Month <span class="badge badge-success">New!</span></a>
-                      <a class="dropdown-item" href="job-tools.html">Job &amp; Unemployment Tools</a>
-                      <a class="dropdown-item" href="new-resident.html">New Resident Help</a>
-                      <a class="dropdown-item" href="community.html">Community Resources</a>
-                      <a class="dropdown-item" href="http://huntingtonevents.hctpl.info">
-                        Community Calendar</a>
-                    </div>
-                </div>
-                <!-- About Dropdown -->
-                <div class="dropdown">
-                  <a class="nav-link dropdown-toggle text-white"
-                  data-toggle="dropdown" href="#">About</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="about.html">About the Library</a>
-                      <a class="dropdown-item" href="markle.html">Markle Branch</a>
-                      <a class="dropdown-item" href="policies.html">Library Policies</a>
-                      <a class="dropdown-item" href="board.html">Library Board of Trustees</a>
-                    </div>
-                </div>
-                <button class="btn btn-success" type="button" data-toggle="collapse"
-                data-target="#contactUsHidden" aria-controls="contactUsHidden"
-                aria-expanded="false" aria-label="Toggle navigation">
-                  <a class="nav-link"><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;Contact Us</a>
-                </button>
-              </nav>
-            </div>
-          </div>
-        </div>
+    <header class="flex flex-column">
+      <div class="flex justify-between container">
+        <img id="logo-desktop" src="resources/img/logo.svg" alt="Huntington City-Township Public Library">
+        <img id="logo-mobile" src="resources/img/logo_white.svg" alt="Huntington City-Township Public Library">
+        <nav id="menu-top" class="flex">
+          <a href="#">Events</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
+          <a id="btn-menu-main" onclick="menuMainShow();">Menu&nbsp;
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+          <!--<a><i class="fa fa-search" aria-hidden="true"></i>&nbsp; Search</a>-->
+        </nav>
       </div>
+      <nav id="menu-main" class="flex container justify-between">
+        <div class="flex flex-column">
+          <h3>Collection</h3>
+          <a href="#">Books, Movies, Music &amp; More</a>
+          <a href="#">NIDL - eBooks &amp; eAudio</a>
+          <a href="#">Genealogy &amp; the Indiana Room</a>
+        </div>
+        <div class="flex flex-column">
+          <h3>Resources</h3>
+          <a href="#">Public Computers, Copier &amp; Fax</a>
+          <a href="#">Meeting &amp; Study Rooms</a>
+          <a href="#">Online Tools &amp; Resources</a>
+          <a href="#">Job &amp; Unemployment Tools</a>
+        </div>
+        <div class="flex flex-column">
+          <h3>Community</h3>
+          <a href="#">New Resident Resources</a>
+          <a href="#">Huntington Links</a>
+          <a href="#">Markle Links</a>
+        </div>
+        <div class="flex flex-column">
+          <h3>About Us</h3>
+          <a href="#">About the Library</a>
+          <a href="#">Markle Branch Library</a>
+          <a href="#">Library Policies</a>
+          <a href="#">Board of Trustees</a>
+        </div>
+      </nav>
     </header>
 
-    <div class="container-fluid bg-brand">
-      <div class="container bg-brand">
-        <div class="row align-items-center" id="logo-hours">
-          <div class="col-auto mr-auto" id="logo">
-            <img src="resources/img/sitelogo_white.png" height="90px" />
-          </div>
-          <div class="col-auto" id="hours">
-            <h3 class="white">Today's Hours</h3>
-            <div id="hhours" class="white"></div>
-            <div id="mhours" class="white"></div>
-          </div>
-        </div>
+    <main class="flex">
+      <div class="flex container flex-column">
+        <p class="crumb">Home</p>
+        <h1>Welcome to the Huntington City-Township Public Library.</h1>
       </div>
-    </div>
+    </main>
 
-    <!-- Search Box, Page Body -->
-    <div class="container-fluid bg-brand">
-      <!-- Search Box -->
-      <div class="container bg-dark top-corner-round" id="searchBox">
-        <form>
-          <div class="form-row">
-            <div class="col-xs-12 col-lg-8">
-              <input class="form-control form-control-lg" type="text"
-              placeholder="Title, author, artist, etc.">
-            </div>
-            <div class="col">
-              <button type="submit"
-              class="btn btn-primary btn-lg btn-block">Search Collection</button>
-            </div>
-            <div class="col">
-            <button type="submit"
-            class="btn btn-outline-primary btn-lg btn-block">Search Website</button>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <!-- Page Body -->
-      <div class="container bottom-corner-round bg-white" id="page-content">
-        <div class="row">
-          <div class="col-xs-12 col-lg-8" id="main-body">
-            <h1>Welcome to the Huntington City-Township Public Library.</h1>
-            <p>
-              Rub face on everything chase imaginary bugs so stretch yet play time,
-              intently sniff hand, chew iPad power cord. Intently sniff hand stick
-              butt in face claw drapes hate dog. Hide when guests come over throwup
-              on your pillow yet intrigued by the shower leave hair everywhere for
-              sun bathe. Climb leg attack feet why must they do that. Sweet beast
-              claw drapes but sleep on keyboard but play time intently stare at
-              the same spot stretch. Under the bed destroy couch, or hunt anything
-              that moves. Claw drapes. Nap all day flop over attack feet why must
-              they do that chase imaginary bugs nap all day. Hopped up on goofballs
-              destroy couch flop over and sleep on keyboard. Cat snacks cat snacks
-              yet swat at dog yet why must they do that chase imaginary bugs chew
-              iPad power cord.
-            </p>
-            <h2 class="page-content-top-margin">Latest Blog Posts</h2>
-            
-          </div>
-          <!-- Sidebar -->
-          <div class="col" id="sidebar">
-            <h2>Quick Links</h2>
-            <p>Quickly find what you're looking for.</p>
-            <ul class="list-group">
-              <li class="list-group-item"><a href="#">Cras justo odio →</a></li>
-              <li class="list-group-item"><a href="#">Dapibus ac facilisis in →</a></li>
-              <li class="list-group-item"><a href="#">Morbi leo risus →</a></li>
-              <li class="list-group-item"><a href="#">Porta ac consectetur ac →</a></li>
-              <li class="list-group-item"><a href="#">Vestibulum at eros →</a></li>
-              <li class="list-group-item"><a href="#">Cras justo odio →</a></li>
-              <li class="list-group-item"><a href="#">Dapibus ac facilisis in →</a></li>
-              <li class="list-group-item"><a href="#">Morbi leo risus →</a></li>
-              <li class="list-group-item"><a href="#">Porta ac consectetur ac →</a></li>
-              <li class="list-group-item"><a href="#">Vestibulum at eros →</a></li>
-            </ul>
-          </div>
+    <footer class="flex">
+      <nav class="flex container justify-between">
+        <div class="flex flex-column">
+          <h3>Collection</h3>
+          <a href="#">Books, Movies, Music &amp; More</a>
+          <a href="#">NIDL - eBooks &amp; eAudio</a>
+          <a href="#">Genealogy &amp; the Indiana Room</a>
         </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container-fluid bg-brand">
-        <div class="container" id="page-footer">
-          <div class="row">
-            <div class="col">
-              <h5 class="white">About Us</h5>
-              <p class="white">The Huntington City-Township Public Library services the city
-              of Huntington, Huntington Township, and the town of Markle in
-              Northeast Indiana, USA.</p>
-            </div>
-            <div class="col">
-              <h5 class="white">Pages</h5>
-              <a href="#">Home</a><br />
-              <a href="#">Blog</a><br />
-              <a href="#">Calendar</a><br />
-              <a href="#">Contact Us</a><br />
-            </div>
-            <div class="col">
-              <h5 class="white">Services</h5>
-              <a class="white" href="#">Books, Movies, Music &amp;
-              More</a><br />
-              <a class="white" href="#">eBooks &amp; eAudiobooks</a><br />
-              <a class="white" href="#">Public Computers, Copier,
-              &amp; Fax</a><br />
-              <a class="white" href="#">Meeting &amp; Study Rooms</a><br />
-              <a class="white" href="#">Genealogy &amp; the Indiana
-              Room</a><br />
-              <a class="white" href="#">Online Tools &amp; Resources</a><br />
-            </div>
-            <div class="col">
-              <h5 class="white">Community</h5>
-              <a class="white" href="#">National Library Card Signup
-              Month <span class="badge badge-success">New!</span></a><br />
-              <a class="white" href="#">Job &amp; Unemployment Tools</a><br />
-              <a class="white" href="#">New Resident Help</a><br />
-              <a class="white" href="#">Community Resources</a><br />
-              <a class="white" href="#">Community Calendar</a><br />
-            </div>
-            <div class="col">
-              <h5 class="white">About</h5>
-              <a class="white" href="#">About the Library</a><br />
-              <a class="white" href="#">Markle Branch</a><br />
-              <a class="white" href="#">Library Policies</a><br />
-              <a class="white" href="#">Library Board of Trustees</a><br />
-              <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
-                &nbsp;Facebook</a><br />
-              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
-                &nbsp;Instagram</a><br />
-              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i>
-                &nbsp;Pinterest</a><br />
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
-                &nbsp;Twitter</a><br />
-            </div>
-          </div>
+        <div class="flex flex-column">
+          <h3>Resources</h3>
+          <a href="#">Public Computers, Copier &amp; Fax</a>
+          <a href="#">Meeting &amp; Study Rooms</a>
+          <a href="#">Online Tools &amp; Resources</a>
+          <a href="#">Job &amp; Unemployment Tools</a>
         </div>
-      </div>
+        <div class="flex flex-column">
+          <h3>Community</h3>
+          <a href="#">New Resident Resources</a>
+          <a href="#">Huntington Links</a>
+          <a href="#">Markle Links</a>
+        </div>
+        <div class="flex flex-column">
+          <h3>About Us</h3>
+          <a href="#">About the Library</a>
+          <a href="#">Markle Branch Library</a>
+          <a href="#">Library Policies</a>
+          <a href="#">Board of Trustees</a>
+        </div>
+      </nav>
     </footer>
 
-    <!-- Bootstrap Javascript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/hours.js"></script>
-    <script src="https://use.fontawesome.com/2b29aa9a6e.js"></script>
+    <script src="js/hctpl.js"></script>
 
   </body>
 </html>

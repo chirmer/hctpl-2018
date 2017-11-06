@@ -1,161 +1,156 @@
-html, .bg-brand {
-  background-color: #3155a4;
+html {
+  font-size: 19px;
+  background-color: #eee;
+  top: 0;
 }
 
-body {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif!important;
-}
-
-h1, h2, h3, h4, h5, h6, .nav-link {
-  font-weight: bold;
-}
-
-footer a {
-  color: white!important;
-  padding-bottom: 5px!important;
+h1, h2, h3, h4, h5, h6, body, p {
+  font-family: 'Source Sans Pro', Verdana, Tahoma, sans-serif;
 }
 
 .flex {
-  display: flex:
-}
-
-.bg-brand-dark, .bg-dark {
-  background-color: #1b3369!important;
-}
-
-.bg-uber-dark {
-  background-color: #0d1e42;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-a {
-  color: #3155a4;
-}
-
-.white {
-  color: white;
-}
-
-/*.top-nav {
-  padding: 10px 0;
-}*/
-
-a.text-white:hover {
-  color: #a3e35e;
-}
-
-.icon-white {
-  fill: white;
-}
-
-.top-corner-round {
-  border-radius: 10px 10px 0 0;
-}
-
-.bottom-corner-round {
-  border-radius: 0 0 10px 10px;
-}
-
-.page-content-top-margin {
-  margin: 30px 0 20px;
-}
-
-.cal-weekdays {
-  padding: 15px;
-  background-color: #ddd;
-}
-
-.cal-btn {
-  text-align: left;
-  white-space: normal;
-  max-width: 128px;
-  font-size: 12px!important;
-}
-
-.small-date {
-  color: #aaa;
-  text-transform: uppercase;
-  display: none;
-}
-
-.btn-primary {
-  background-color: #3155a4;
-  border: 1px solid #3155a4;
-}
-
-.btn-outline-primary {
-  border: 1px solid #3155a4;
-  color: #3155a4;
-}
-
-button.text-truncate {
-  max-width: 128px;
-}
-
-.cal-date {
-  border-bottom: 1px solid #ddd;
-  text-align: justify;
-  padding: 20px 0 10px 0;
-}
-
-.btn-success {
-  background-color: #a3e35e;
-  border: 1px solid #a3e35e;
-}
-
-.btn-outline-success {
-  border: 1px solid #a3e35e;
-  color: #a3e35e;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-#logo-hours {
-  min-height: 200px;
   display: flex;
 }
 
-#hours {
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crumb {
+  font-size: .80em;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+header {
+  min-height: 400px;
+  background-color: #3155a4;
+  border-top: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+header .container img {
+  margin-top: 20px;
+}
+
+#logo-mobile {
+  display: none;
+}
+
+#menu-top a {
+  padding: 30px;
   color: white;
-  padding: 20px 0;
 }
 
-#logo {
-  padding: 20px 0;
+#menu-top a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-#searchBox input, #searchBox button {
-  margin: 5px auto;
+#menu-top .fa-angle-double-down {
+  font-size: 0.8em;
 }
 
-#searchBox {
-  padding: 10px 15px;
+#menu-top .fa {
+  opacity: 0.4;
 }
 
-#page-content {
-  padding: 50px 30px;
+header img {
+  height: 48px;
 }
 
-#contactUsHidden {
-  z-index: 5;
+main {
+  background-color: #eee;
 }
 
-#page-footer {
-  padding: 50px 30px;
+main .container {
+  z-index: 10;
+  margin: -80px auto 40px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 3px;
 }
 
-@include media-breakpoint-down(sm) {
-  .cal-weekdays {
+#menu-main {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 100px;
+  padding: 20px;
+  color: white;
+  border-radius: 3px;
+}
+
+#menu-main div.flex-column, footer nav .flex-column {
+  width: 300px;
+  margin-right: 10px;
+}
+
+#menu-main div.flex-column:last-child, footer nav .flex-column:last-child {
+  margin-right: 0;
+}
+
+#menu-main h3 {
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0 0 15px 5px;
+}
+
+#menu-main a {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  opacity: 0.75;
+  color: white;
+}
+
+#menu-main a:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #eee;
+}
+
+footer h3 {
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 0 3px 5px;
+}
+
+footer a {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  opacity: 0.75;
+  color: #555;
+}
+
+footer a:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 991px) {
+  #logo-desktop {
     display: none;
+  }
+  #logo-mobile {
+    display: flex;
   }
 }
