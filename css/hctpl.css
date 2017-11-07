@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6, body, p {
   margin-bottom: 20px;
 }
 
+.bottom-margin {
+  margin-bottom: 20px;
+}
+
 header {
   min-height: 250px;
   background-color: #2b53ad;
@@ -191,12 +195,7 @@ main .fa-pinterest-square:hover {
 }
 
 main section {
-  width: 76%;
-  margin-right: 50px;
-}
-
-main aside {
-  width: 24%;
+  width: 100%;
 }
 
 footer.flex {
@@ -255,7 +254,55 @@ footer em {
 .btn i {
   opacity: 0.6;
   font-size: 0.8em;
-  margin-right: 5px;
+  margin: 0 5px;
+}
+
+.cal-header {
+  width: 14.25%;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding:  10px 0;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.cal-header:first-child {
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.cal-day {
+  min-height: 200px;
+  width: 14.25%;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.flex .cal-day:first-child {
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.cal-day p {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.cal-inactive {
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#logo-desktop:hover, #logo-mobile:hover {
+  cursor: pointer;
+}
+
+.full-text {
+  margin: 0 200px;
+}
+
+.cal-day a {
+  font-size: 0.8em;
+  white-space: normal;
+  text-align: left;
+  display: block;
 }
 
 @media only screen and (max-width: 991px) {
@@ -264,6 +311,10 @@ footer em {
   }
   #logo-mobile {
     display: flex;
+  }
+
+  .full-text {
+    margin: 0 75px;
   }
 }
 
@@ -275,6 +326,23 @@ footer em {
 
   .hide-mobile {
     display: none;
+  }
+
+  .full-text {
+    margin: 0;
+  }
+
+  .cal-day {
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .flex .cal-day:first-child {
+    border-left: 0px solid rgba(0, 0, 0, 0.2);
+  }
+
+  #month {
+    text-align: center;
   }
 
   #menu-top a {

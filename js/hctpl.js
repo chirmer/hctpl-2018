@@ -21,6 +21,13 @@ $(document).ready(function () {
     var url = "https://www.google.com/search?&q=site%3Ahuntingtonpub.lib.in.us+" + searchInputA;
     window.open(url);
   });
+  // Site home link
+  $('#logo-desktop').click(function() {
+    window.location = "index.html";
+  })
+  $('#logo-mobile').click(function() {
+    window.location = "index.html";
+  })
 });
 
 // https://www.google.com/search?&q=site+huntingtonpub.lib.in.us+
