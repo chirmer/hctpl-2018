@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6, body, p {
   border-radius: 3px;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .btn-primary {
   background-color: #2b53ad;
   border: 0;
@@ -263,6 +267,9 @@ footer em {
   text-align: center;
   padding:  10px 0;
   border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
 }
 
 .cal-header:first-child {
@@ -298,11 +305,18 @@ footer em {
   margin: 0 200px;
 }
 
-.cal-day a {
+.cal-day button {
   font-size: 0.8em;
   white-space: normal;
   text-align: left;
   display: block;
+  border-radius: 0;
+}
+
+.btn-success {
+  background-color: #a3e35e;
+  color: #082605;
+  border: 0;
 }
 
 @media only screen and (max-width: 991px) {

@@ -28,6 +28,14 @@ $(document).ready(function () {
   $('#logo-mobile').click(function() {
     window.location = "index.html";
   })
+  // Huntington Programs show & hide
+  $("#prog-htgn").click(function() {
+    $(".cal-day .btn-success").toggleClass("hidden");
+  });
+  // Markle Programs show & hide
+  $("#prog-mkl").click(function() {
+    $(".cal-day .btn-primary").toggleClass("hidden");
+  });
 });
 
 // https://www.google.com/search?&q=site+huntingtonpub.lib.in.us+
