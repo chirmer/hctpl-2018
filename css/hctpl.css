@@ -50,8 +50,18 @@ header {
   background-color: #2b53ad;
   background-image: linear-gradient(180deg, #2b53ad 20%, #18397c 100%);
   border-top: 5px solid rgba(0, 0, 0, 0.4);
-  padding-top: 25px;
+  padding-top: 10px;
   padding-bottom: 105px;
+}
+
+header div.justify-between:first-child {
+  margin-bottom: 35px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8em;
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-pinterest-square, .fa-instagram {
+  font-size: 1.2em!important;
 }
 
 #logo-mobile {
