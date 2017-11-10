@@ -54,6 +54,13 @@ header {
   padding-bottom: 105px;
 }
 
+header a {
+  color: rgba(255, 255, 255, 0.7);
+}
+header a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 header div.justify-between:first-child {
   margin-bottom: 35px;
   color: rgba(255, 255, 255, 0.7);
@@ -61,7 +68,7 @@ header div.justify-between:first-child {
 }
 
 .fa-facebook-square, .fa-twitter-square, .fa-pinterest-square, .fa-instagram {
-  font-size: 1.2em!important;
+  font-size: 1.5em!important;
 }
 
 #logo-mobile {
