@@ -18,7 +18,7 @@ $(document).ready(function () {
   //Search Website
   $('#btn-search-website').click(function() {
     var searchInputA = $('#input-search').val();
-    var url = "https://www.google.com/search?&q=site%3Ahuntingtonpub.lib.in.us+" + searchInputA;
+    var url = "https://chirmer.github.io/hctpl-2018/search.html/?q=" + searchInputA;
     window.open(url);
   });
   // Site home link
