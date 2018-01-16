@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6, body, p {
   margin-bottom: 20px;
 }
 
+.text-small {
+  font-size: 0.9em;
+}
+
 header {
   min-height: 250px;
   background-color: #2b53ad;
@@ -219,6 +223,21 @@ main section {
   width: 100%;
 }
 
+main a, footer a {
+  font-weight: 700;
+  color: #3155a4;
+  border-bottom: 1px solid #a3e35e;
+}
+
+/*main a::after, footer a::after {
+  font-family: FontAwesome;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #aaa;
+  content: ' \f0c1';
+  transform: rotate(45deg);
+}*/
+
 footer.flex {
   background-color: #efeff1;
 }
@@ -233,7 +252,7 @@ footer h3 {
   color: #2b53ad;
 }
 
-footer a {
+/*footer a {
   font-size: 0.8em;
   padding: 5px 7px;
   opacity: 0.75;
@@ -247,7 +266,7 @@ footer a:hover {
   border-radius: 3px;
   text-decoration: none;
   color: black;
-}
+}*/
 
 footer nav {
   padding: 20px 40px!important;
