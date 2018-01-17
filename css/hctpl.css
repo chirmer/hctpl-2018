@@ -366,6 +366,10 @@ footer em {
   .full-text {
     margin: 0 75px;
   }
+
+  #topline {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 768px) {
