@@ -111,6 +111,13 @@ header div.justify-between:first-child {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+.active-dot {
+  color: #a3e35e!important;
+  opacity: 1!important;
+  font-size: 0.8em;
+  margin-bottom: 3px;
+}
+
 header img {
   height: 48px;
 }
@@ -238,6 +245,10 @@ main a, footer a {
   transform: rotate(45deg);
 }*/
 
+footer {
+  margin-bottom: 60px;
+}
+
 footer.flex {
   background-color: #efeff1;
 }
@@ -353,6 +364,7 @@ footer em {
   background-color: #a3e35e;
   color: #082605;
   border: 0;
+  margin: 2px;
 }
 
 @media only screen and (max-width: 991px) {

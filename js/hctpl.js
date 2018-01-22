@@ -30,12 +30,12 @@ $(document).ready(function () {
   })
   // Huntington Programs show & hide
   $("#prog-htgn").click(function() {
-    $(".cal-day .btn-success").toggleClass("hidden");
+    $(".cal-day.btn-success").toggleClass("hidden");
   });
   // Markle Programs show & hide
   $("#prog-mkl").click(function() {
-    $(".cal-day .btn-primary").toggleClass("hidden");
+    $(".cal-day.btn-primary").toggleClass("hidden");
   });
 });
 
-// https://www.google.com/search?&q=site+huntingtonpub.lib.in.us+
+// https://www.google.com/search?&q=site%3Ahuntingtonpub.lib.in.us+
