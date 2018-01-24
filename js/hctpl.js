@@ -37,6 +37,8 @@ $(document).ready(function () {
     $(".cal-day.btn-primary").toggleClass("hidden");
   });
 
+  // Calendar code -------------------------------------------------------------
+
 
   $("#filter-htgn").click(function() {
     $("#filter-htgn").toggleClass("list-group-item-success");
