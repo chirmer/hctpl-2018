@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6, body, p {
   font-family: 'Source Sans Pro', Verdana, Tahoma, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
 .btn, .form-control {
   border-radius: 3px;
 }
@@ -48,6 +52,21 @@ h1, h2, h3, h4, h5, h6, body, p {
 .text-small {
   font-size: 0.9em;
 }
+i.fab {
+  height: 24px;
+}
+
+.card {
+  margin-top: 32px;
+}
+
+.card-link {
+  margin-left: 20px;
+}
+
+button.list-group-item:hover {
+  cursor: pointer;
+}
 
 header {
   min-height: 250px;
@@ -71,7 +90,7 @@ header div.justify-between:first-child {
   font-size: 0.8em;
 }
 
-.fa-facebook-square, .fa-twitter-square, .fa-pinterest-square, .fa-instagram {
+.fa-facebook-square, .fa-twitter, .fa-pinterest, .fa-instagram {
   font-size: 1.5em!important;
 }
 
@@ -91,11 +110,12 @@ header div.justify-between:first-child {
   text-decoration: none;
 }
 
-#menu-top .fa-angle-double-down {
+#menu-top .fa-angle-double-down, .fa-thumbtack {
   font-size: 0.8em;
+  opacity: 0.5;
 }
 
-#menu-top .fa {
+#menu-top .fas {
   opacity: 0.4;
 }
 
@@ -186,7 +206,7 @@ header img {
 
 .display-1, .display-2, .display-3, .display-4 {
   color: #2b53ad;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 main {
@@ -279,15 +299,20 @@ footer a:hover {
   color: black;
 }*/
 
-footer nav {
+/*footer nav {
   padding: 20px 40px!important;
-}
+}*/
 
 footer em {
   text-align: center;
   font-size: 1.5em;
   opacity: 0.25;
   margin: 0 auto 20px auto;
+}
+
+footer a {
+  margin: 0;
+  padding: 0;
 }
 
 .flex {
@@ -365,6 +390,15 @@ footer em {
   color: #082605;
   border: 0;
   margin: 2px;
+}
+
+.calendar-container {
+  font-family: 'Source Sans Pro', serif!important;
+  font-size: 1em!important;
+}
+
+.st-c-pos {
+  white-space: normal;
 }
 
 @media only screen and (max-width: 991px) {
@@ -447,5 +481,14 @@ footer em {
 
   main aside {
     margin-top: 40px;
+  }
+}
+
+@media print {
+  header {
+    display: none;
+  }
+  footer {
+    display:none;
   }
 }

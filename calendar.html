@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://use.fontawesome.com/2b29aa9a6e.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/hctpl.css" type="text/css" rel="stylesheet">
     <title>Huntington City-Township Public Library</title>
+    <meta name="description" content="A page's description, usually one or two sentences."/>
   </head>
   <body>
 
@@ -15,10 +16,10 @@
       <div class="flex justify-between container" id="topline">
         <div><strong>Today's Hours:</strong> <span id="hhours"></span>; <span id="mhours"></span></div>
         <div>
-          <a href="http://facebook.com/hctpl"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
-          <a href="https://twitter.com/HCTPLibrary"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>&nbsp; &nbsp;
-          <a href="https://pinterest.com/hctpl"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
-          <a href="https://instagram.com/hctpl"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="http://facebook.com/hctpl"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
+          <a href="https://twitter.com/HCTPLibrary"><i class="fab fa-twitter"></i></a>&nbsp; &nbsp;
+          <a href="https://pinterest.com/hctpl"><i class="fab fa-pinterest"></i></a>&nbsp;&nbsp;
+          <a href="https://instagram.com/hctpl"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="flex justify-between container">
@@ -28,7 +29,7 @@
           <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
           <a id="btn-menu-main">Menu&nbsp;
             <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-          <a href="calendar.html" class="hide-mobile">Events</a>
+          <a href="calendar.html" class="hide-mobile"><i class="fas fa-thumbtack"></i> Events</a>
           <a href="blog.html" class="hide-mobile">Blog</a>
           <a href="contact.html" class="hide-mobile">Contact Us</a>
           <a id="btn-search-box"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -56,10 +57,9 @@
           <a href="#">Inter-Library Loan (ILL)</a>
           <a href="#">Request an Item</a>
           <a href="#">Library Card Types</a>
-          <a href="#"><i class="fa fa-thumb-tack active-dot" aria-hidden="true"></i>&nbsp;&nbsp;Fines &amp; Fees</a>
-          <a href="#">Adult Services</a>
-          <a href="#">Teen Services</a>
-          <a href="#">Youth Services</a>
+          <a href="#">Fines &amp; Fees</a>
+          <a href="#">Teens at the Library</a>
+          <a href="#">Youth at the Library</a>
         </div>
         <div class="flex flex-column">
           <h3>Resources</h3>
@@ -94,50 +94,6 @@
       </nav>
     </header>
 
-
-
-
-
-    <!-- EVENT MODALS -->
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">DIY Jewelry Making Workshop</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <strong>Date &amp; Time</strong>
-            <p>12/9/2017 12 p.m.-3 p.m.</p>
-            <strong>Age Range</strong>
-            <p>Adults Only</p>
-            <strong>Description</strong>
-            <p>Rebecca Sandlin will be leading the program, demonstrating and
-              guiding participants in the making of beaded jewelry. Only 12 may
-              participate due to supplies, so registration is required.
-            </p>
-            <strong>Address</strong>
-            <address>
-              Markle Library <br>
-              155 W Sparks St <br>
-              Markle, IN 46770
-            </address>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Register</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
     <main class="flex">
       <div class="flex container flex-column">
         <div class="flex justify-between">
@@ -148,177 +104,42 @@
             <i class="fa fa-pinterest-square" aria-hidden="true"></i>
           </div>-->
         </div>
-        <h1 class="display-4">Event Calendar</h1>
+        <h1 class="display-4">Upcoming Events</h1>
         <div class="flex">
-          <section class="flex flex-column">
+          <section class="flex col-3 flex-column text-small">
+            <h6>Filter by location:</h6>
+            <div class="list-group">
+              <button id="filter-htgn" type="button" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Huntington Main </button>
+              <button id="filter-mkl" type="button" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Markle Branch </button>
+            </div><br>
+            <h6>Filter by age:</h6>
+            <div class="list-group">
+              <button id="filter-adult" type="button" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Adult </button>
+              <button id="filter-teen" type="button" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Teen </button>
+              <button id="filter-youth" type="button" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Youth </button>
+            </div>
+          </section>
+          <section class="flex flex-column col-9">
 
-            <div class="flex justify-center">
-              <button class="btn btn-small btn-primary" id="prog-htgn">At Huntington Library</button> &nbsp;
-              <button class="btn btn-small btn-success" id="prog-mkl">At Markle Library</button>
-            </div> <br><br>
-
-            <div class="flex justify-between bottom-margin">
-              <a href="" class="btn btn-secondary">
-                <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> November
-              </a>
-              <h3 id="month">December</h3>
-              <a href="" class="btn btn-secondary">January
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div class="flex hide-mobile">
-              <h6 class="cal-header">Sunday</h6>
-              <h6 class="cal-header">Monday</h6>
-              <h6 class="cal-header">Tuesday</h6>
-              <h6 class="cal-header">Wednesday</h6>
-              <h6 class="cal-header">Thursday</h6>
-              <h6 class="cal-header">Friday</h6>
-              <h6 class="cal-header">Saturday</h6>
-            </div>
-            <div class="flex">
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>26</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>27</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>28</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>29</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>30</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>1</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>2</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="cal-day flex-column">
-                <p>3</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>4</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>5</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>6</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>7</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>8</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>9</p>
-                <button class="btn btn-success btn-sm btn-block" data-toggle="modal" data-target="#exampleModal">
-                  <span class="text-small"><b>12PM</b></span> DIY Jewelry Making Workshop
-                </button>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="cal-day flex-column">
-                <p>10</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>11</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>12</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>13</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>14</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>15</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>16</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="cal-day flex-column">
-                <p>17</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>18</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>19</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>20</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>21</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>22</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>23</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="cal-day flex-column">
-                <p>24</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>25</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>26</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>27</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>28</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>29</p>
-              </div>
-              <div class="cal-day flex-column">
-                <p>31</p>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="cal-day flex-column">
-                <p>31</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>1</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>2</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>3</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>4</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>5</p>
-              </div>
-              <div class="cal-day flex-column cal-inactive hide-mobile">
-                <p>6</p>
+            <div class="card ev-htgn ev-adult ev-teen ev-youth">
+              <div class="card-body">
+                <h5 class="card-title">Virtual reality - try it out!</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><span class="badge badge-dark">All Ages</span> 5:30-7:30pm 3/6 & 12-2pm 3/26 @ Huntington, 5:30-7pm 3/6 @ Markle</h6>
+                <p class="card-text">We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
+                <a href="#" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Register</a>
+                <a href="#" class="card-link"><i class="far fa-map"></i> Directions</a>
               </div>
             </div>
 
-
+            <div class="card ev-mkl ev-adult ev-teen ev-youth">
+              <div class="card-body">
+                <h5 class="card-title">Virtual reality - try it out!</h5>
+                <h6 class="card-subtitle mb-2 text-muted"><span class="badge badge-dark">All Ages</span> 5:30-7:30pm 3/6 & 12-2pm 3/26 @ Huntington, 5:30-7pm 3/6 @ Markle</h6>
+                <p class="card-text">We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
+                <a href="#" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Register</a>
+                <a href="#" class="card-link"><i class="far fa-map"></i> Directions</a>
+              </div>
+            </div>
 
           </section>
         </div>
@@ -341,17 +162,34 @@
           <address class="text-small">255 W Park Dr<br>Huntington, IN 46750<br>
             Phone: <a href="tel:2603560824">(260)356-0824</a><br>
             Fax: (260)356-3073<br>
-            Email: <a href="mailto:ask@hctpl.info">ask@hctpl.info</a>
+            Email: <a href="mailto:ask@hctpl.info">ask@hctpl.info</a><br><br>
+            <a href="https://goo.gl/maps/tiWFUMy9aoE2">
+              <i class="fa fa-map-signs" aria-hidden="true"></i> Directions to Huntington
+            </a>
+            <br>
           </address>
-          <a href="https://goo.gl/maps/tiWFUMy9aoE2" class="btn btn-primary text-small" ><i class="fa fa-map-signs" aria-hidden="true"></i> Directions to Huntington</a>
+          <strong class="text-small">Open Hours:</strong>
+          <p class="text-small">
+            Mon-Thu: 9 a.m. - 8 p.m.<br>
+            Fri & Sat: 9 a.m. - 5 p.m.<br>
+            Sun: Closed
+          </p>
         </div>
         <div class="flex flex-column">
           <h3>Markle Branch</h3>
           <address class="text-small">155 W Sparks St<br>Markle, IN 46770<br>
             Phone &amp; Fax: <a href="tel:2603560824">(260)758-3332</a><br>
             Email: <a href="mailto:markle@hctpl.info">markle@hctpl.info</a><br><br>
+            <a href="https://goo.gl/maps/oRduSFAnNqS2">
+              <i class="fa fa-map-signs" aria-hidden="true"></i> Directions to Markle
+            </a><br>
           </address>
-          <a href="https://goo.gl/maps/oRduSFAnNqS2" class="btn btn-primary text-small" ><i class="fa fa-map-signs" aria-hidden="true"></i> Directions to Markle</a>
+          <strong class="text-small">Open Hours:</strong>
+          <p class="text-small">
+            Mon, Wed, Fri: 12 p.m. - 7 p.m.<br>
+            Tue, Thu, Sat: 10 a.m. - 5 p.m.<br>
+            Sun: Closed
+          </p>
         </div>
         <div class="flex flex-column">
           <h3>Latest News</h3>

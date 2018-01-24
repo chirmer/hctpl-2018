@@ -36,6 +36,37 @@ $(document).ready(function () {
   $("#prog-mkl").click(function() {
     $(".cal-day.btn-primary").toggleClass("hidden");
   });
+
+
+  $("#filter-htgn").click(function() {
+    $("#filter-htgn").toggleClass("list-group-item-success");
+    $(".card").not(".ev-htgn").toggleClass("hidden");
+    $("#filter-htgn .fa-check").toggleClass("invisible");
+  });
+
+  $("#filter-mkl").click(function() {
+    $("#filter-mkl").toggleClass("list-group-item-success");
+    $(".card").not(".ev-mkl").toggleClass("hidden");
+    $("#filter-mkl .fa-check").toggleClass("invisible");
+  });
+
+  $("#filter-adult").click(function() {
+    $("#filter-adult").toggleClass("list-group-item-success");
+    $(".card").not(".ev-adult").toggleClass("hidden");
+    $("#filter-adult .fa-check").toggleClass("invisible");
+  });
+
+  $("#filter-teen").click(function() {
+    $("#filter-teen").toggleClass("list-group-item-success");
+    $(".card").not(".ev-teen").toggleClass("hidden");
+    $("#filter-teen .fa-check").toggleClass("invisible");
+  });
+
+  $("#filter-youth").click(function() {
+    $("#filter-youth").toggleClass("list-group-item-success");
+    $(".card").not(".ev-youth").toggleClass("hidden");
+    $("#filter-youth .fa-check").toggleClass("invisible");
+  });
 });
 
 // https://www.google.com/search?&q=site%3Ahuntingtonpub.lib.in.us+
