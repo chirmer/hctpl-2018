@@ -147,13 +147,13 @@ header img {
   margin-top: 25px;
 }
 
-#menu-main div.flex-column, footer div .flex-column {
+#menu-main div.flex-column, footer nav .flex-column {
   width: 300px;
   min-width: 150px;
   margin-right: 20px;
 }
 
-#menu-main div.flex-column:last-child, footer div .flex-column:last-child {
+#menu-main div.flex-column:last-child, footer nav .flex-column:last-child {
   margin-right: 0;
 }
 
