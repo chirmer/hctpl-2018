@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://use.fontawesome.com/2b29aa9a6e.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/hctpl.css" type="text/css" rel="stylesheet">
-    <title>Huntington City-Township Public Library</title>
-    <meta name="description" content="A page's description, usually one or two sentences."/>
+    <title>Home » HCTPL</title>
+    <meta name="description" content="The Huntington City-Township Public Library
+    serves the city of Huntington &amp; the town of Markle in Indiana, USA. The
+    library provides access to a vast collection of items, resources, workshops and
+    more to help patrons learn, discover, gather, &amp; grow."/>
   </head>
   <body>
 
@@ -16,12 +21,13 @@
       <div class="flex justify-between container" id="topline">
         <div><strong>Today's Hours:</strong> <span id="hhours"></span>; <span id="mhours"></span></div>
         <div>
-          <a href="http://facebook.com/hctpl"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
-          <a href="https://twitter.com/HCTPLibrary"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>&nbsp; &nbsp;
-          <a href="https://pinterest.com/hctpl"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
-          <a href="https://instagram.com/hctpl"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="http://facebook.com/hctpl"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
+          <a href="https://twitter.com/HCTPLibrary"><i class="fab fa-twitter"></i></a>&nbsp; &nbsp;
+          <a href="https://pinterest.com/hctpl"><i class="fab fa-pinterest"></i></a>&nbsp;&nbsp;
+          <a href="https://instagram.com/hctpl"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
+      <!-- Top level menu -->
       <div class="flex justify-between container">
         <img id="logo-desktop" src="resources/img/logo.svg" alt="Huntington City-Township Public Library">
         <img id="logo-mobile" src="resources/img/logo_white.svg" alt="Huntington City-Township Public Library">
@@ -29,12 +35,13 @@
           <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
           <a id="btn-menu-main">Menu&nbsp;
             <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-          <a href="calendar.html" class="hide-mobile">Events</a>
+          <a href="calendar.html" class="hide-mobile"><i class="fas fa-thumbtack"></i> Events</a>
           <a href="blog.html" class="hide-mobile">Blog</a>
           <a href="contact.html" class="hide-mobile">Contact Us</a>
           <a id="btn-search-box"><i class="fa fa-search" aria-hidden="true"></i></a>
         </nav>
       </div>
+      <!-- Search box -->
       <section id="search-box" class="flex container hidden flex-column">
         <input class="form-control form-control-lg" id="input-search" type="text" placeholder="Type your search here...">
         <div class="flex">
@@ -44,6 +51,7 @@
             <i class="fa fa-search" aria-hidden="true"></i> Website</button>
         </div>
       </section>
+      <!-- Dropdown menu content -->
       <nav id="menu-main" class="flex container justify-between hidden">
         <div id="mobile-links" class="flex flex-column">
           <a href="calendar.html">Events &amp; Workshop Calendar</a>
@@ -52,32 +60,32 @@
         </div>
         <div class="flex flex-column">
           <h3>Collection</h3>
+          <a href="library-card.html">Get a Library Card</a>
           <a href="collection.html">Books, Movies, Music &amp; More</a>
           <a href="ebooks.html">NIDL - eBooks &amp; eAudio</a>
-          <a href="#">Inter-Library Loan (ILL)</a>
-          <a href="#">Request an Item</a>
-          <a href="#">Library Card Types</a>
-          <a href="#">Fines &amp; Fees</a>
-          <a href="#">Teens at the Library</a>
-          <a href="#">Youth at the Library</a>
+          <a href="ill.html">Inter-Library Loan (ILL)</a>
+          <a href="request-item.html">Request an Item</a>
+          <a href="fines-fees.html">Fines &amp; Fees</a>
+          <a href="teens.html">Teens at the Library</a>
+          <a href="youth.html">Youth at the Library</a>
         </div>
         <div class="flex flex-column">
           <h3>Resources</h3>
           <a href="genealogy.html">Genealogy &amp; the Indiana Room</a>
-          <a href="#">Reference Services</a>
+          <a href="reference.html">Reference Services</a>
           <a href="computers-copier-fax.html">Public Computers, Copier &amp; Fax</a>
           <a href="meeting-rooms.html">Meeting &amp; Study Rooms</a>
-          <a href="online-tools.html">Online Tools &amp; Resources</a>
+          <a href="online-tools.html">Research &amp; Online Learning</a>
           <a href="job-tools.html">Job &amp; Unemployment Tools</a>
-          <a href="#">Accessibility Resources</a>
+          <a href="accessibility.html">Accessibility Resources</a>
         </div>
         <div class="flex flex-column">
           <h3>Community</h3>
-          <a href="#">Book &amp; Hobby Clubs</a>
+          <a href="clubs.html">Book &amp; Hobby Clubs</a>
           <a href="new-resident.html">New Resident Resources</a>
           <a href="community.html">Huntington Links</a>
           <a href="markle.html">Markle Links</a>
-          <a href="#">Community Calendar</a>
+          <a href="http://huntingtonevents.hctpl.info/">Community Calendar</a>
           <a href="http://www.huntingtonliteracy.org">Huntington Literacy Coalition</a>
         </div>
         <div class="flex flex-column">
@@ -86,24 +94,16 @@
           <a href="markle.html">Markle Branch Library</a>
           <a href="policies.html">Library Policies</a>
           <a href="board.html">Board of Trustees</a>
-          <a href="#">Friends of the Library</a>
-          <a href="#">Library Staff</a>
-          <a href="#">Work Here</a>
-          <a href="#">Volunteer Opportunities</a>
+          <a href="friends.html">Friends of the Library</a>
+          <a href="staff.html">Library Staff</a>
+          <a href="hiring.html">Work Here</a>
+          <a href="volunteer.html">Volunteer Opportunities</a>
         </div>
       </nav>
     </header>
 
     <main class="flex">
       <div class="flex container flex-column">
-        <div class="flex justify-between">
-          <!--<div class="flex">
-            <p class="crumb">Share: </p>
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
-          </div>-->
-        </div>
         <h1 class="display-4">Page Title</h1>
         <div class="flex">
           <section class="flex flex-column">
@@ -117,12 +117,13 @@
       <div class="flex container">
         <em>Your destination to learn, to discover, to gather, to grow.</em>
       </div>
-      <nav class="flex container justify-between">
+      <div class="flex container justify-between">
         <div class="flex flex-column">
           <h3>About Us</h3>
           <p class="text-small">The Huntington City-Township Public Library serves the cities of
           Huntington and Markle, IN by providing an extensive collection, a
           variety of workshops and classes, resources, and more.</p>
+          <a href="sitemap.html" class="text-small"><i class="fas fa-crosshairs"></i> Sitemap</a>
         </div>
         <div class="flex flex-column">
           <h3>Huntington Main</h3>
@@ -164,7 +165,9 @@
           out what's happening at your library.</p>
           <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup">
-            <form action="https://hctpl.us8.list-manage.com/subscribe/post?u=b2997a5d541cd57af9bed5b8a&amp;id=e45e23e929" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="https://hctpl.us8.list-manage.com/subscribe/post?u=b2997a5d541cd57af9bed5b8a&amp;id=e45e23e929"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
             <div class="mc-field-group text-small">
             	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
@@ -192,7 +195,7 @@
 
             <!--End mc_embed_signup-->
         </div>
-      </nav>
+      </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
