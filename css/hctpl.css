@@ -397,8 +397,8 @@ footer a {
   font-size: 1em!important;
 }
 
-.st-c-pos {
-  white-space: normal;
+.card-header {
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 991px) {
