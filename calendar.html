@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/hctpl.css" type="text/css" rel="stylesheet">
+    <link href="css/print.css" type="text/css" rel="stylesheet">
     <title>Huntington City-Township Public Library</title>
     <meta name="description" content="A page's description, usually one or two sentences."/>
   </head>
@@ -108,10 +109,10 @@
         <p>
           Below you can find the event's we've got coming up at the library for
           the next few months. You can filter by library location or age group
-          using the filters below, as well. 
+          using the filters below, as well.
         </p>
-        <div class="flex" id="event-filter">
-          <section class="flex col-md-3 col-xs-12 flex-column text-small">
+        <div class="flex">
+          <section class="flex col-md-3 col-xs-12 flex-column text-small" id="event-filter">
             <h6>Filter by location:</h6>
             <div class="list-group">
               <button id="filter-htgn" type="button" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Huntington Main </button>
@@ -132,21 +133,8 @@
               </div>
               <div class="card-body">
                 <!--<h5 class="card-title">Virtual reality - try it out!</h5>-->
-                <h6 class="card-subtitle mb-2 text-muted"><span class="badge badge-secondary">All Ages</span> 5:30-7pm 3/5 @ Markle</h6>
-                <p class="card-text">We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
-                <a href="#" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Register</a>
-                <a href="#" class="card-link"><i class="far fa-map"></i> Directions</a>
-              </div>
-            </div>
-
-            <div class="card ev-htgn ev-adult ev-teen ev-youth">
-              <div class="card-header">
-                Virtual Reality - Try it out!
-              </div>
-              <div class="card-body">
-                <!--<h5 class="card-title">Virtual reality - try it out!</h5>-->
-                <h6 class="card-subtitle mb-2 text-muted"><span class="badge badge-secondary">All Ages</span> 5:30-7:30pm 3/6 @ Huntington</h6>
-                <p class="card-text">We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
+                <h6 class="card-subtitle mb-2 text-muted">5:30-7pm 3/5 @ Markle</h6>
+                <p class="card-text"><span class="badge badge-secondary">All Ages</span> We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
                 <a href="program-reg.html" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Register</a>
                 <a href="#" class="card-link"><i class="far fa-map"></i> Directions</a>
               </div>
@@ -158,9 +146,22 @@
               </div>
               <div class="card-body">
                 <!--<h5 class="card-title">Virtual reality - try it out!</h5>-->
-                <h6 class="card-subtitle mb-2 text-muted"><span class="badge badge-secondary">All Ages</span> 12-2pm 3/26 @ Huntington</h6>
-                <p class="card-text">We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
-                <a href="#" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Register</a>
+                <h6 class="card-subtitle mb-2 text-muted">5:30-7:30pm 3/6 @ Huntington</h6>
+                <p class="card-text"><span class="badge badge-secondary">All Ages</span> We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
+                <a href="program-reg.html" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Register</a>
+                <a href="#" class="card-link"><i class="far fa-map"></i> Directions</a>
+              </div>
+            </div>
+
+            <div class="card ev-htgn ev-adult ev-teen ev-youth">
+              <div class="card-header">
+                Virtual Reality - Try it out!
+              </div>
+              <div class="card-body">
+                <!--<h5 class="card-title">Virtual reality - try it out!</h5>-->
+                <h6 class="card-subtitle mb-2 text-muted">12-2pm 3/26 @ Huntington</h6>
+                <p class="card-text"><span class="badge badge-secondary">All Ages</span> We'll have a VR headset on loan from the Indiana State Library. Join us as we play a variety of virtual reality games and activities.</p>
+                <a href="program-reg.html" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Register</a>
                 <a href="#" class="card-link"><i class="far fa-map"></i> Directions</a>
               </div>
             </div>

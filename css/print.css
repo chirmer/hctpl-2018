@@ -1,0 +1,21 @@
+/**
+ * Print stylesheet for yourwebsite.com
+* @version         1.0
+* @lastmodified    16.06.2016
+*/
+
+@media print {
+   header, footer, #event-filter {
+     display: none!important;
+   }
+
+   main {
+     font-size: 0.8em!important;
+     background-color: #fff!important;
+     width: 100%!important;
+   }
+
+   html {
+     margin-top: 60px!important;
+   }
+}

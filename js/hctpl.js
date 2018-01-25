@@ -69,6 +69,17 @@ $(document).ready(function () {
     $(".card").filter(".ev-youth").toggleClass("hidden");
     $("#filter-youth .fa-check").toggleClass("invisible");
   });
+
+  $(function(){
+    $('.card-subtitle').each(function(key,value){
+        console.log(value);
+        var currentDate = new Date();
+        var date = new Date(value);
+        if(date < currentDate){
+            $(value).parent().parent().remove();
+        }
+    });
+});
 });
 
 // https://www.google.com/search?&q=site%3Ahuntingtonpub.lib.in.us+
