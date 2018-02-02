@@ -110,9 +110,15 @@ header div.justify-between:first-child {
   text-decoration: none;
 }
 
-#menu-top .fa-angle-double-down, .fa-thumbtack {
+#menu-top .fa-angle-double-down {
   font-size: 0.8em;
   opacity: 0.5;
+}
+
+.fa-star {
+  font-size: 0.8em!important;
+  color: #a3e35e!important;
+  padding-bottom: 2px!important;
 }
 
 #menu-top .fas {
@@ -247,6 +253,11 @@ main a, footer a {
   font-weight: 700;
   color: #3155a4;
   border-bottom: 1px solid #a3e35e;
+}
+
+main a:hover, footer a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #3b5598;
 }
 
 /*main a::after, footer a::after {

@@ -53,19 +53,19 @@ $(document).ready(function () {
   });
 
   $("#filter-adult").click(function() {
-    $("#filter-adult").toggleClass("list-group-item-success");
+    $("#filter-adult").toggleClass("list-group-item-secondary");
     $(".card").not(".ev-adult").toggleClass("hidden");
     $("#filter-adult .fa-check").toggleClass("invisible");
   });
 
   $("#filter-teen").click(function() {
-    $("#filter-teen").toggleClass("list-group-item-success");
+    $("#filter-teen").toggleClass("list-group-item-secondary");
     $(".card").not(".ev-teen").toggleClass("hidden");
     $("#filter-teen .fa-check").toggleClass("invisible");
   });
 
   $("#filter-youth").click(function() {
-    $("#filter-youth").toggleClass("list-group-item-success");
+    $("#filter-youth").toggleClass("list-group-item-secondary");
     $(".card").not(".ev-youth").toggleClass("hidden");
     $("#filter-youth .fa-check").toggleClass("invisible");
   });
