@@ -418,6 +418,10 @@ dd:last-child {
   background: #ddd;
 }
 
+#event-filter {
+  margin-bottom: 30px;
+}
+
 footer div:first-child {
   margin-bottom: 20px;
 }
