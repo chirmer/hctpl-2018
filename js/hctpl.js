@@ -41,32 +41,32 @@ $(document).ready(function () {
 
 
   $("#filter-htgn").click(function() {
-    $("#filter-htgn").toggleClass("list-group-item-success");
-    $(".card").filter(".ev-htgn").toggleClass("hidden");
+    $("#filter-htgn").toggleClass("list-group-item-primary");
+    $(".ev-h").toggleClass("hidden");
     $("#filter-htgn .fa-check").toggleClass("invisible");
   });
 
   $("#filter-mkl").click(function() {
     $("#filter-mkl").toggleClass("list-group-item-success");
-    $(".card").filter(".ev-mkl").toggleClass("hidden");
+    $(".ev-m").toggleClass("hidden");
     $("#filter-mkl .fa-check").toggleClass("invisible");
   });
 
   $("#filter-adult").click(function() {
     $("#filter-adult").toggleClass("list-group-item-secondary");
-    $(".card").not(".ev-adult").toggleClass("hidden");
+    $(".event").not(".ev-a").toggleClass("hidden");
     $("#filter-adult .fa-check").toggleClass("invisible");
   });
 
   $("#filter-teen").click(function() {
     $("#filter-teen").toggleClass("list-group-item-secondary");
-    $(".card").not(".ev-teen").toggleClass("hidden");
+    $(".event").not(".ev-t").toggleClass("hidden");
     $("#filter-teen .fa-check").toggleClass("invisible");
   });
 
   $("#filter-youth").click(function() {
     $("#filter-youth").toggleClass("list-group-item-secondary");
-    $(".card").not(".ev-youth").toggleClass("hidden");
+    $(".event").not(".ev-y").toggleClass("hidden");
     $("#filter-youth .fa-check").toggleClass("invisible");
   });
 

@@ -314,11 +314,6 @@ footer em {
   margin: 0 auto 20px auto;
 }
 
-footer a {
-  margin: 0;
-  padding: 0;
-}
-
 .flex {
   display: flex;
 }
@@ -335,42 +330,6 @@ footer a {
   opacity: 0.6;
   font-size: 0.8em;
   margin: 0 5px;
-}
-
-.cal-header {
-  width: 14.25%;
-  background-color: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding:  10px 0;
-  border-right: 2px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 0;
-}
-
-.cal-header:first-child {
-  border-left: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.cal-day {
-  min-height: 200px;
-  width: 14.25%;
-  border-right: 2px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.flex .cal-day:first-child {
-  border-left: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.cal-day p {
-  margin-right: 10px;
-  text-align: right;
-}
-
-.cal-inactive {
-  opacity: 0.7;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 #logo-desktop:hover, #logo-mobile:hover {
@@ -405,6 +364,64 @@ footer a {
   font-weight: 700;
 }
 
+.no-under {
+  border-bottom: 0px solid #fff !important;
+}
+
+dt, dd {
+  margin: 0;
+}
+
+dd:last-child {
+  margin-top: 10px;
+}
+
+.ev-h, .ev-m {
+  margin-bottom: 10px;
+}
+
+.ev-h {
+  background: rgba(43, 83, 173, 0.1);
+  border-left: 10px solid #2b53ad;
+  padding: 15px 15px 0 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.ev-m {
+  background: rgba(163, 227, 94, 0.2);
+  border-left: 10px solid #a3e35e;
+  padding: 15px 15px 0 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.list-group-item {
+  border-radius: 0;
+  border-left: 10px solid #eee;
+  background: #f5f5f5;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.list-group-item-primary {
+  background: rgba(43, 83, 173, 0.2);
+  border-left: 10px solid #2b53ad;
+}
+
+.list-group-item-success {
+  background: rgba(163, 227, 94, 0.3);
+  border-left: 10px solid #a3e35e;
+}
+
+.list-group-item-secondary {
+  border-left: 10px solid #ccc;
+  background: #ddd;
+}
+
+footer div:first-child {
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 991px) {
   #logo-desktop {
     display: none;
@@ -420,6 +437,7 @@ footer a {
   #topline {
     flex-direction: column;
   }
+
 }
 
 @media only screen and (min-width: 200px) and (max-width: 768px) {
