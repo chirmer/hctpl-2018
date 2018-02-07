@@ -4,13 +4,16 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/hctpl.css" type="text/css" rel="stylesheet">
-    <link href="css/print.css" type="text/css" rel="stylesheet">
-    <title>Events » HCTPL</title>
-    <meta name="description" content="All of the library-sponsored events,
-    workshops, and classes taking place within the next few months."/>
+    <title>Home » HCTPL</title>
+    <meta name="description" content="The Huntington City-Township Public Library
+    serves the city of Huntington &amp; the town of Markle in Indiana, USA. The
+    library provides access to a vast collection of items, resources, workshops and
+    more to help patrons learn, discover, gather, &amp; grow."/>
   </head>
   <body>
 
@@ -24,6 +27,7 @@
           <a href="https://instagram.com/hctpl"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
+      <!-- Top level menu -->
       <div class="flex justify-between container">
         <img id="logo-desktop" src="resources/img/logo.svg" alt="Huntington City-Township Public Library">
         <img id="logo-mobile" src="resources/img/logo_white.svg" alt="Huntington City-Township Public Library">
@@ -31,12 +35,13 @@
           <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
           <a id="btn-menu-main">Menu&nbsp;
             <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-          <a href="events.html" class="hide-mobile"><i class="fas fa-star"></i> Events</a>
+          <a href="events.html" class="hide-mobile">Events</a>
           <a href="blog.html" class="hide-mobile">Blog</a>
           <a href="contact.html" class="hide-mobile">Contact Us</a>
           <a id="btn-search-box"><i class="fa fa-search" aria-hidden="true"></i></a>
         </nav>
       </div>
+      <!-- Search box -->
       <section id="search-box" class="flex container hidden flex-column">
         <input class="form-control form-control-lg" id="input-search" type="text" placeholder="Type your search here...">
         <div class="flex">
@@ -46,9 +51,10 @@
             <i class="fa fa-search" aria-hidden="true"></i> Website</button>
         </div>
       </section>
+      <!-- Dropdown menu content -->
       <nav id="menu-main" class="flex container justify-between hidden">
         <div id="mobile-links" class="flex flex-column">
-          <a href="events.html"><i class="fas fa-star"></i> Events &amp; Workshop Calendar</a>
+          <a href="events.html">Events &amp; Workshop Calendar</a>
           <a href="blog.html">Library Blog</a>
           <a href="contact.html">Contact Us</a>
         </div>
@@ -57,7 +63,7 @@
           <a href="library-card.html">Get a Library Card</a>
           <a href="collection.html">Books, Movies, Music &amp; More</a>
           <a href="ebooks.html">NIDL - eBooks &amp; eAudio</a>
-          <a href="ill.html">Inter-Library Loan (ILL)</a>
+          <a href="ill.html"><i class="fas fa-star"></i> Inter-Library Loan (ILL)</a>
           <a href="request-item.html">Request an Item</a>
           <a href="fines-fees.html">Fines &amp; Fees</a>
           <a href="teens.html">Teens at the Library</a>
@@ -97,77 +103,10 @@
     </header>
 
     <main class="flex">
-      <div class="flex container flex-column pad40">
-        <h1 class="display-4">Upcoming Events</h1>
-        <p>
-          Here you can find our upcoming events. You can filter by library location or age group
-          using the filters below. All events are free unless otherwise mentioned.<br>&nbsp;
-        </p>
+      <div class="flex container flex-column">
+        <h1 class="display-4">Page Title</h1>
         <div class="flex">
-          <section class="flex col-md-3 col-xs-12 flex-column text-small" id="event-filter">
-            <h6>Filter by location:</h6>
-            <div class="list-group">
-              <button id="filter-htgn" type="button" class="list-group-item list-group-item-action list-group-item-primary"><i class="fas fa-check"></i>&nbsp;&nbsp;Huntington Main </button>
-              <button id="filter-mkl" type="button" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i>&nbsp;&nbsp;Markle Branch </button>
-            </div><br>
-            <h6>Filter by age:</h6>
-            <div class="list-group">
-              <button id="filter-adult" type="button" class="list-group-item list-group-item-action list-group-item-secondary"><i class="fas fa-check"></i>&nbsp;&nbsp;Adult </button>
-              <button id="filter-teen" type="button" class="list-group-item list-group-item-action list-group-item-secondary"><i class="fas fa-check"></i>&nbsp;&nbsp;Teen </button>
-              <button id="filter-youth" type="button" class="list-group-item list-group-item-action list-group-item-secondary"><i class="fas fa-check"></i>&nbsp;&nbsp;Youth </button>
-            </div>
-          </section>
-          <section class="flex flex-column col-md-9 col-xs-12" id="event-list">
-
-            <div class="flex flex-column event ev-m ev-a ev-t ev-y">
-              <h5>Event Name</h5>
-              <dl class="row">
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">When:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">2018-02-01 6 p.m.</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">Where:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">Markle Branch Library</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">Ages:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">Adults</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">Description:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">This is where we'd put the description for the event.
-                If it's long, it should break onto new lines nicely. Whee!</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small"> </dt>
-                <dd class="col-lg-10 col-sm-9 col-12">
-                  <a href="program-reg.html" class="btn btn-sm btn-dark">
-                    <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;Register
-                  </a>&nbsp;&nbsp;
-                  <a href="https://goo.gl/maps/esUBwSkeABN2" type="button" class="btn btn-outline-dark btn-sm">
-                    <i class="far fa-arrow-alt-circle-right"></i>&nbsp;&nbsp;Directions
-                  </a>
-                </dd>
-              </dl>
-            </div>
-
-            <div class="flex flex-column event ev-h ev-a ev-t ev-y">
-              <h5>Event Name</h5>
-              <dl class="row">
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">When:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">2018-02-01 6 p.m.</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">Where:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">Huntington Main Library</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">Ages:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">Adults</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small">Description:</dt>
-                <dd class="col-lg-10 col-sm-9 col-12">This is where we'd put the description for the event.
-                If it's long, it should break onto new lines nicely. Whee!</dd>
-                <dt class="col-lg-2 col-sm-3 col-12 text-small"> </dt>
-                <dd class="col-lg-10 col-sm-9 col-12">
-                  <a href="program-reg.html" class="btn btn-sm btn-dark">
-                    <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;Register
-                  </a>&nbsp;&nbsp;
-                  <a href="https://goo.gl/maps/Q4xiFMM81h82" type="button" class="btn btn-outline-dark btn-sm">
-                    <i class="far fa-arrow-alt-circle-right"></i>&nbsp;&nbsp;Directions
-                  </a>
-                </dd>
-              </dl>
-            </div>
-
-
+          <section class="flex flex-column">
 
           </section>
         </div>

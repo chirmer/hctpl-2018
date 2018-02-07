@@ -56,12 +56,16 @@ i.fab {
   height: 24px;
 }
 
-.card {
-  margin-top: 32px;
-}
-
 .card-link {
   margin-left: 20px;
+}
+
+.pad40 {
+  padding: 40px;
+}
+
+.pad10 {
+  padding: 10px;
 }
 
 button.list-group-item:hover {
@@ -216,37 +220,10 @@ main .container {
   z-index: 10;
   margin: -80px auto 40px auto;
   background-color: white;
-  padding: 40px;
   border-radius: 3px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03),
               10px 0px 15px rgba(0, 0, 0, 0.03),
               -10px 0px 15px rgba(0, 0, 0, 0.03);
-}
-
-main .fa-facebook-square, main .fa-twitter-square, main .fa-pinterest-square {
-  margin-left: 10px;
-  opacity: 0.6;
-}
-
-main .fa-facebook-square:hover {
-  opacity: 1;
-  color: #3b5598;
-  cursor: pointer;
-}
-
-main .fa-twitter-square:hover {
-  opacity: 1;
-  color: #1da1f2;
-  cursor: pointer;
-}
-main .fa-pinterest-square:hover {
-  opacity: 1;
-  color: #bd081c;
-  cursor: pointer;
-}
-
-main section {
-  width: 100%;
 }
 
 main a, footer a {
@@ -287,26 +264,6 @@ footer h3 {
   color: #2b53ad;
 }
 
-/*footer a {
-  font-size: 0.8em;
-  padding: 5px 7px;
-  opacity: 0.75;
-  color: #43444a;
-}
-
-footer a:hover {
-  opacity: 1;
-  cursor: pointer;
-  background-color: rgba(8, 13, 40, 0.05);
-  border-radius: 3px;
-  text-decoration: none;
-  color: black;
-}*/
-
-/*footer nav {
-  padding: 20px 40px!important;
-}*/
-
 footer em {
   text-align: center;
   font-size: 1.5em;
@@ -337,15 +294,7 @@ footer em {
 }
 
 .full-text {
-  margin: 0 200px;
-}
-
-.cal-day button {
-  font-size: 0.8em;
-  white-space: normal;
-  text-align: left;
-  display: block;
-  border-radius: 0;
+  margin: 10px 180px;
 }
 
 .btn-success {
@@ -426,6 +375,14 @@ footer div:first-child {
   margin-bottom: 20px;
 }
 
+.card-deck {
+  margin: 20px 0;
+}
+
+.card-footer {
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 991px) {
   #logo-desktop {
     display: none;
@@ -435,10 +392,14 @@ footer div:first-child {
   }
 
   .full-text {
-    margin: 0 75px;
+    margin: 10px 75px;
   }
 
   #topline {
+    flex-direction: column;
+  }
+
+  .card-deck {
     flex-direction: column;
   }
 
@@ -455,16 +416,11 @@ footer div:first-child {
   }
 
   .full-text {
-    margin: 0;
+    margin: 10px 0;
   }
 
-  .cal-day {
-    width: 100%;
-    min-height: 100px;
-  }
-
-  .flex .cal-day:first-child {
-    border-left: 0px solid rgba(0, 0, 0, 0.2);
+  .card-deck {
+    flex-direction: column;
   }
 
   #month {

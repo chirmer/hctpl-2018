@@ -17,5 +17,10 @@
 
    html {
      margin-top: 60px!important;
+     background: #fff!important;
+   }
+
+   .pad40 {
+     padding: 40px 0!important;
    }
 }
