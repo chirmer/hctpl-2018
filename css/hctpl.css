@@ -376,7 +376,7 @@ footer div:first-child {
 }
 
 .card-deck {
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 .card-footer {
@@ -401,6 +401,11 @@ footer div:first-child {
 
   .card-deck {
     flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .display-4 {
+    font-size: 3em;
   }
 
 }
@@ -421,12 +426,8 @@ footer div:first-child {
 
   .card-deck {
     flex-direction: column;
+    padding: 10px 0;
   }
-
-  #month {
-    text-align: center;
-  }
-
   #menu-top a {
     padding: 12px 17px 8px 17px;
     font-size: 0.8em;
@@ -463,6 +464,10 @@ footer div:first-child {
 
   main aside {
     margin-top: 40px;
+  }
+
+  .display-4 {
+    font-size: 2.2em;
   }
 }
 
