@@ -1,13 +1,13 @@
 $(document).ready(function () {
   // Main menu show & hide
-  $("#btn-menu-main").click(function() {
-    $("#menu-main").toggleClass("hidden");
-    $("#btn-menu-main").toggleClass("bg-dark");
+  $("#btn-full-nav").click(function() {
+    $("#full-nav").toggleClass("hidden");
+    $("#btn-full-nav").toggleClass("purple");
   });
   // Search show & hide
   $("#btn-search-box").click(function() {
     $("#search-box").toggleClass("hidden");
-    $("#btn-search-box").toggleClass("bg-dark");
+    $("#btn-search-box").toggleClass("purple");
   });
   //Search Catalog
   $('#btn-search-catalog').click(function() {
@@ -22,7 +22,7 @@ $(document).ready(function () {
     window.open(url);
   });
   // Site home link
-  $('#logo-desktop').click(function() {
+  $('#logo').click(function() {
     window.location = "index.html";
   })
   $('#logo-mobile').click(function() {
