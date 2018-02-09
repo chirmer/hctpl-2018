@@ -8,6 +8,7 @@ var hours = ["Huntington & Markle are closed today.",          // Sunday
              "Huntington:   9 a.m. - 5 p.m."];  // Saturday
 var todaysHours = hours[dayOfWeek];
 document.getElementById("hhours").innerHTML = todaysHours;
+document.getElementById("hhours-m").innerHTML = todaysHours;
 
 var dayOfWeek = (new Date).getDay();
 var hours = ["",          // Sunday
@@ -19,3 +20,4 @@ var hours = ["",          // Sunday
              "Markle:   10 a.m. - 5 p.m."];  // Saturday
 var todaysHours = hours[dayOfWeek];
 document.getElementById("mhours").innerHTML = todaysHours;
+document.getElementById("mhours-m").innerHTML = todaysHours;

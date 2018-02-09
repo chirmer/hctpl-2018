@@ -20,7 +20,7 @@
     <header class="flex flex-col">
       <!-- Visible nav, logo -->
       <div id="logo-nav" class="flex container flex-al-cen flex-ju-bw">
-        <div id="logo-box" class="flex">
+        <div id="logo-box" class="flex flex-al-cen">
           <!-- Logo -->
           <img id="logo" src="resources/img/logo_white.svg">
           <!-- Menu -->
@@ -34,7 +34,7 @@
           </nav>
         </div>
         <!-- Today's hours -->
-        <div id="hours" class="flex white">
+        <div id="hours" class="flex white hide-mobile">
           <p><strong>Today's Hours:</strong><br>
             <span id="hhours" class="weak"></span><br>
             <span id="mhours" class="weak"></span><br>
@@ -51,6 +51,15 @@
       </div>
       <!-- Hidden full nav -->
       <nav id="full-nav" class="flex flex-ju-bw container hidden purple">
+        <div id="mobile-extras" class="flex-col pad20">
+          <p><strong class="white">Today's Hours:</strong><br>
+            <span id="hhours-m" class="white weak"></span><br>
+            <span id="mhours-m" class="white weak"></span><br>
+          </p>
+          <a href="events.html" class="white">Events</a>
+          <a href="blog.html" class="white">Blog</a>
+          <a href="contact.html" class="white">Contact</a>
+        </div>
         <div class="flex flex-col pad20">
           <h4 class="white">Collection</h4>
           <a class="white weak" href="library-card.html">Get a Library Card</a>
@@ -99,7 +108,7 @@
     </main>
 
     <footer class="flex container flex-col">
-      <div class="flex">
+      <div  id="mission" class="flex">
         <h3>Your destination to learn, to discover, to gather, to grow.</h3>
       </div>
       <div class="flex flex-ju-bw">

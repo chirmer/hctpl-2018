@@ -152,6 +152,10 @@ header {
   color: #a3e35e;
 }
 
+#mobile-extras {
+  display: none;
+}
+
 /* Main content ------------------------------------------------------------- */
 
 main {
@@ -206,6 +210,10 @@ footer h3 {
   font-style: italic;
   font-weight: 400;
   opacity: 0.2;
+}
+
+#mission {
+  justify-content: center;
 }
 
 /* Misc styles -------------------------------------------------------------- */
@@ -298,19 +306,56 @@ input {
 
 @media only screen and (min-width: 200px) and (max-width: 785px) {
 
+  main, #logo-nav, #mission, #full-nav, #search-box, footer {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #logo-nav {
+    width: 90%;
+    justify-content: stretch;
+  }
+
+  #logo {
+    height: 45px;
+  }
+
+  #logo-box {
+    justify-content: space-between;
+  }
+
+  #main-nav {
+    justify-content: flex-end;
+  }
+
+  #full-nav p {
+    padding-left: 10px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  #mobile-extras {
+    display: flex;
+  }
+
   .hide-mobile {
     display: none;
   }
 
-  footer div.flex-ju-bw {
+  footer div.flex-ju-bw, #full-nav {
     flex-direction: column;
-    width: 100%;
+    max-width: 94%;
+    flex-basis: 1;
   }
 
-  footer div.flex-col.pad20 {
-    width: 80%;
+  footer div.flex-col.pad20, #full-nav .pad20 {
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #full-nav a {
+    padding: 10px;
   }
 
 }
