@@ -333,10 +333,10 @@ input {
   main, #logo-nav, #mission, #full-nav, #search-box, footer {
     margin-left: 15px;
     margin-right: 15px;
-    max-width: 90%;
+    max-width: 95%;
   }
 
-  #search-box {
+  #search-box, #full-nav {
     flex-direction: column;
   }
 
@@ -384,13 +384,13 @@ input {
     display: none;
   }
 
-  footer div.flex-ju-bw, #full-nav {
+  footer div.flex-ju-bw {
     flex-direction: column;
     max-width: 90%;
   }
 
   footer div.flex-col.pad20, #full-nav .pad20 {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
