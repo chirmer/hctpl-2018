@@ -60,26 +60,33 @@ header {
   padding-bottom: 80px;
 }
 
+#hours {
+  margin-bottom: 10px;
+}
+
+#hours p, #full-nav a {
+  line-height: 1.4em;
+}
+
+#hours p {
+  font-size: 0.8em;
+}
+
 #logo-nav {
   margin-top: 20px;
 }
 
 #logo {
-  max-height: 65px;
+  max-height: 45px;
   margin-right: 50px;
+}
+
+#logo-m {
+  display: none;
 }
 
 #logo:hover {
   cursor: pointer;
-}
-
-#logo-box {
-  flex-basis: 1;
-  min-width: 70%;
-}
-
-#hours {
-  padding-left: 20px;
 }
 
 #main-nav {
@@ -218,10 +225,6 @@ footer h3 {
 
 /* Misc styles -------------------------------------------------------------- */
 
-#hours p, #full-nav a {
-  line-height: 1.4em;
-}
-
 strong {
   font-weight: 700;
 }
@@ -244,9 +247,10 @@ button, .btn {
   border-radius: 3px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  color: white;
+  color: #2b53ad;
   font-size: 1em;
-  border: none;
+  border: 2px solid #2b53ad;
+  background-color: rgba(43, 83, 173, 0.2);
   padding: 10px 20px;
   margin: 5px;
   text-align: center;
@@ -254,7 +258,20 @@ button, .btn {
 
 button:hover, .btn:hover {
   cursor: pointer;
-  background-color: #000;
+  color: white;
+  background-color: rgba(43, 83, 173, 1);
+  transition: linear 150ms;
+}
+
+.btn-white {
+  border: 2px solid rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.25);
+  color: white;
+}
+
+.btn-white:hover {
+  background-color: rgba(255,255,255,1);
+  color: #2b53ad;
   transition: linear 150ms;
 }
 
@@ -294,34 +311,59 @@ input {
   padding: 10px 20px;
   font-family: "Source Sans Pro", sans-serif;
   border-style: none;
-  border: 1px solid rgba(0,0,0,0.2);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03),
-              3px 0px 5px rgba(0, 0, 0, 0.03),
-              -3px 0px 5px rgba(0, 0, 0, 0.03);
+  border: 2px solid rgba(43, 83, 173, 0.3);
 }
 
 /* -------------------------------------------------------------------------- */
 /* Media Queries ------------------------------------------------------------ */
 /* -------------------------------------------------------------------------- */
 
+@media only screen and (min-width: 786px) and (max-width: 1220px) {
+
+  .container, main, #logo-nav, #hours, #search-box {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 95%;
+  }
+
+}
+
 @media only screen and (min-width: 200px) and (max-width: 785px) {
 
   main, #logo-nav, #mission, #full-nav, #search-box, footer {
     margin-left: 15px;
     margin-right: 15px;
+    max-width: 95%;
+  }
+
+  #search-box {
+    flex-direction: column;
+  }
+
+  #search-box div {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  #search-box input {
+    margin-bottom: 0;
+  }
+
+  #hours {
+    flex-direction: column;
   }
 
   #logo-nav {
-    width: 90%;
-    justify-content: stretch;
+    width: 95%;
   }
 
   #logo {
-    height: 45px;
+    display: none;
   }
 
-  #logo-box {
-    justify-content: space-between;
+  #logo-m {
+    display: flex;
+    height: 45px;
   }
 
   #main-nav {

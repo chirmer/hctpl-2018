@@ -18,11 +18,22 @@
   <body>
 
     <header class="flex flex-col">
+      <!-- Hours -->
+      <div id="hours" class="flex container flex-ju-bw flex-al-cen">
+        <p class="flex white">
+          <strong>Huntington Main:&nbsp;</strong>
+          <span id="hhours" class="weak"></span>
+        </p>
+        <p class="flex white">
+          <strong>Markle Branch:&nbsp;</strong>
+          <span id="mhours" class="weak"></span>
+        </p>
+      </div>
       <!-- Visible nav, logo -->
       <div id="logo-nav" class="flex container flex-al-cen flex-ju-bw">
-        <div id="logo-box" class="flex flex-al-cen">
           <!-- Logo -->
-          <img id="logo" src="resources/img/logo_white.svg">
+          <img id="logo" src="resources/img/logo.svg">
+          <img id="logo-m" src="resources/img/logo_white.svg">
           <!-- Menu -->
           <nav id="main-nav" class="flex white">
             <a id="btn-full-nav" href="#" class="white pad20">Menu&nbsp;&nbsp;<i class="fas
@@ -32,21 +43,13 @@
             <a href="contact.html" class="white pad20 hide-mobile">Contact</a>
             <a id="btn-search-box" href="#" class="white pad20"><i class="fas fa-search"></i></a>
           </nav>
-        </div>
-        <!-- Today's hours -->
-        <div id="hours" class="flex white hide-mobile">
-          <p><strong>Today's Hours:</strong><br>
-            <span id="hhours" class="weak"></span><br>
-            <span id="mhours" class="weak"></span><br>
-          </p>
-        </div>
       </div>
       <!-- Hidden search box -->
       <div id="search-box" class="flex container hidden purple">
         <input id="input-search" type="text" class="flex mar20" placeholder="Type your search here...">
         <div class="flex">
-          <button id="btn-search-catalog" class="bg-blue"><i class="fas fa-search fa-sm"></i>&nbsp;Collection</button>
-          <button id="btn-search-website" class="bg-blue"><i class="fas fa-search fa-sm"></i>&nbsp;Website</button>
+          <button id="btn-search-catalog" class="btn-white"><i class="fas fa-search fa-sm"></i>&nbsp;Collection</button>
+          <button id="btn-search-website" class="btn-white"><i class="fas fa-search fa-sm"></i>&nbsp;Website</button>
         </div>
       </div>
       <!-- Hidden full nav -->
@@ -187,7 +190,7 @@
                 <div class="response" id="mce-success-response" style="display:none"></div>
               </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b2997a5d541cd57af9bed5b8a_e45e23e929" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn bg-blue"></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
                 </div>
             </form>
             </div>
