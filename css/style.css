@@ -241,7 +241,7 @@ strong {
   padding: 20px;
 }
 
-button, .btn {
+button, .btn, input.btn {
   display: flex;
   align-items: center;
   border-radius: 3px;
