@@ -320,7 +320,13 @@ input {
 
 @media only screen and (min-width: 786px) and (max-width: 1220px) {
 
-  .container, main, #logo-nav, #hours, #search-box {
+  .container, main {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 100%;
+  }
+
+  #logo-nav, #hours, #search-box, #full-nav {
     margin-left: 15px;
     margin-right: 15px;
     max-width: 95%;
