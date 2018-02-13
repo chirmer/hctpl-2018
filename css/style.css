@@ -214,6 +214,42 @@ main p, main ul {
   margin: 10px 0;
 }
 
+dl {
+  line-height: 1.6em;
+  margin: 15px 0;
+}
+
+dl dt {
+  font-size: 1.125em;
+  font-weight: 700;
+  background-color: rgba(43, 83, 173, 0.2);
+  color: #2b53ad;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+}
+
+dl dd {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+  margin-bottom: 10px;
+}
+
+dl dd:last-child {
+  margin-bottom: 0;
+}
+
+main form label {
+  display: block;
+  font-weight: 700;
+  padding: 10px 0 5px 0;
+  opacity: 0.6;
+}
+
+main form input {
+  width: 85%;
+}
+
 main ol {
   list-style-type: decimal;
   list-style-position: outside;

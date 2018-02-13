@@ -1,191 +1,216 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <meta charset="utf-8">
+    <html lang="en-US">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700|Source+Serif+Pro"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="css/hctpl.css" type="text/css" rel="stylesheet">
-    <title>Meeting & Study Rooms » HCTPL</title>
-    <meta name="description" content="Learn more about HCTPL's meeting and study
-    rooms, which are available for use by the public - completely free."/>
+    <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- SEO and all that jazz -->
+    <title>Meeting & Study Rooms - HCTPL</title>
+    <meta name="description" content="Our meeting rooms are the perfect place
+    to hold your event or meeting. Our study rooms can give you the peace and quiet
+    you need to get work done."/>
   </head>
+
   <body>
 
-    <header class="flex flex-column">
-      <div class="flex justify-between container" id="topline">
-        <div><strong>Today's Hours:</strong> <span id="hhours"></span>; <span id="mhours"></span></div>
-        <div>
-          <a href="http://facebook.com/hctpl"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
-          <a href="https://twitter.com/HCTPLibrary"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
-          <a href="https://pinterest.com/hctpl"><i class="fab fa-pinterest"></i></a>&nbsp;&nbsp;
-          <a href="https://instagram.com/hctpl"><i class="fab fa-instagram"></i></a>
-        </div>
+    <header class="flex flex-col">
+      <!-- Hours -->
+      <div id="hours" class="flex container flex-ju-bw flex-al-cen">
+        <p class="flex white">
+          <strong>Huntington Main:&nbsp;</strong>
+          <span id="hhours" class="weak"></span>
+        </p>
+        <p class="flex white">
+          <strong>Markle Branch:&nbsp;</strong>
+          <span id="mhours" class="weak"></span>
+        </p>
       </div>
-      <!-- Top level menu -->
-      <div class="flex justify-between container">
-        <img id="logo-desktop" src="resources/img/logo.svg" alt="Huntington City-Township Public Library">
-        <img id="logo-mobile" src="resources/img/logo_white.svg" alt="Huntington City-Township Public Library">
-        <nav id="menu-top" class="flex">
-          <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-          <a id="btn-menu-main">Menu&nbsp;
-            <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-          <a href="events.html" class="hide-mobile">Events</a>
-          <a href="blog.html" class="hide-mobile">Blog</a>
-          <a href="contact.html" class="hide-mobile">Contact Us</a>
-          <a id="btn-search-box"><i class="fa fa-search" aria-hidden="true"></i></a>
-        </nav>
+      <!-- Visible nav, logo -->
+      <div id="logo-nav" class="flex container flex-al-cen flex-ju-bw">
+          <!-- Logo -->
+          <img id="logo" src="resources/img/logo.svg">
+          <img id="logo-m" src="resources/img/logo_white.svg">
+          <!-- Menu -->
+          <nav id="main-nav" class="flex white">
+            <a id="btn-full-nav" href="#" class="white pad20">Menu&nbsp;&nbsp;<i class="fas
+              fa-angle-double-down weak fa-xs"></i></a>
+            <a href="events.html" class="white pad20 hide-mobile">Events</a>
+            <a href="blog.html" class="white pad20 hide-mobile">Blog</a>
+            <a href="contact.html" class="white pad20 hide-mobile">Contact</a>
+            <a id="btn-search-box" href="#" class="white pad20"><i class="fas fa-search"></i></a>
+          </nav>
       </div>
-      <!-- Search box -->
-      <section id="search-box" class="flex container hidden flex-column">
-        <input class="form-control form-control-lg" id="input-search" type="text" placeholder="Type your search here...">
+      <!-- Hidden search box -->
+      <div id="search-box" class="flex container hidden purple">
+        <input id="input-search" type="text" class="flex mar20" placeholder="Type your search here...">
         <div class="flex">
-          <button type="button" id="btn-search-catalog" class="btn btn-primary btn-sm">
-            <i class="fa fa-search" aria-hidden="true"></i> Collection</button>
-          <button type="button" id="btn-search-website" class="btn btn-secondary btn-sm">
-            <i class="fa fa-search" aria-hidden="true"></i> Website</button>
+          <button id="btn-search-catalog" class="btn-white"><i class="fas fa-search fa-sm"></i>&nbsp;Collection</button>
+          <button id="btn-search-website" class="btn-white"><i class="fas fa-search fa-sm"></i>&nbsp;Website</button>
         </div>
-      </section>
-      <!-- Dropdown menu content -->
-      <nav id="menu-main" class="flex container justify-between hidden">
-        <div id="mobile-links" class="flex flex-column">
-          <a href="events.html">Events &amp; Workshop Calendar</a>
-          <a href="blog.html">Library Blog</a>
-          <a href="contact.html">Contact Us</a>
+      </div>
+      <!-- Hidden full nav -->
+      <nav id="full-nav" class="flex flex-ju-bw container hidden purple">
+        <div id="mobile-extras" class="flex-col pad20">
+          <a href="events.html" class="white">Events</a>
+          <a href="blog.html" class="white">Blog</a>
+          <a href="contact.html" class="white">Contact</a>
         </div>
-        <div class="flex flex-column">
-          <h3>Collection</h3>
-          <a href="library-card.html">Get a Library Card</a>
-          <a href="collection.html">Books, Movies, Music &amp; More</a>
-          <a href="ebooks.html">NIDL - eBooks &amp; eAudio</a>
-          <a href="ill.html">Inter-Library Loan (ILL)</a>
-          <a href="request-item.html">Request an Item</a>
-          <a href="fines-fees.html">Fines &amp; Fees</a>
-          <a href="teens.html">Teens at the Library</a>
-          <a href="youth.html">Youth at the Library</a>
+        <div class="flex flex-col pad20">
+          <h4 class="white">Collection</h4>
+          <a class="white weak" href="library-card.html">Get a Library Card</a>
+          <a class="white weak" href="collection.html">Books, Movies, Music &amp; More</a>
+          <a class="white weak" href="ebooks.html">NIDL - eBooks &amp; eAudio</a>
+          <a class="white weak" href="ill.html">Inter-Library Loan (ILL)</a>
+          <a class="white weak" href="request-item.html">Request an Item</a>
+          <a class="white weak" href="fines-fees.html">Fines &amp; Fees</a>
+          <a class="white weak" href="teens.html">Teens at the Library</a>
+          <a class="white weak" href="youth.html">Youth at the Library</a>
         </div>
-        <div class="flex flex-column">
-          <h3>Resources</h3>
-          <a href="genealogy.html">Genealogy &amp; the Indiana Room</a>
-          <a href="reference.html">Reference Services</a>
-          <a href="computers-copier-fax.html">Public Computers, Copier &amp; Fax</a>
-          <a href="meeting-rooms.html"><i class="fas fa-star"></i> Meeting &amp; Study Rooms</a>
-          <a href="online-tools.html">Research &amp; Online Learning</a>
-          <a href="job-tools.html">Job &amp; Unemployment Tools</a>
-          <a href="accessibility.html">Accessibility Resources</a>
+        <div class="flex flex-col pad20">
+          <h4 class="white">Resources</h4>
+          <a class="white weak" href="genealogy.html">Genealogy &amp; the Indiana Room</a>
+          <a class="white weak" href="reference.html">Reference Services</a>
+          <a class="white weak" href="computers-copier-fax.html">Public Computers, Copier &amp; Fax</a>
+          <a class="white weak" href="meeting-rooms.html"><i class="fas fa-caret-right green"></i>&nbsp;
+            Meeting &amp; Study Rooms</a>
+          <a class="white weak" href="online-tools.html">Research &amp; Online Learning</a>
+          <a class="white weak" href="job-tools.html">Job &amp; Unemployment Tools</a>
+          <a class="white weak" href="accessibility.html">Accessibility Resources</a>
         </div>
-        <div class="flex flex-column">
-          <h3>Community</h3>
-          <a href="clubs.html">Book &amp; Hobby Clubs</a>
-          <a href="new-resident.html">New Resident Resources</a>
-          <a href="community.html">Huntington Links</a>
-          <a href="markle.html">Markle Links</a>
-          <a href="http://huntingtonevents.hctpl.info/">Community Calendar</a>
-          <a href="http://www.huntingtonliteracy.org">Huntington Literacy Coalition</a>
+        <div class="flex flex-col pad20">
+          <h4 class="white">Community</h4>
+          <a class="white weak" href="clubs.html">Book &amp; Hobby Clubs</a>
+          <a class="white weak" href="new-resident.html">New Resident Resources</a>
+          <a class="white weak" href="community.html">Huntington Links</a>
+          <a class="white weak" href="markle.html">Markle Links</a>
+          <a class="white weak" href="http://huntingtonevents.hctpl.info/">Community Calendar</a>
+          <a class="white weak" href="http://www.huntingtonliteracy.org">Huntington Literacy Coalition</a>
         </div>
-        <div class="flex flex-column">
-          <h3>About Us</h3>
-          <a href="about.html">About the Library</a>
-          <a href="markle.html">Markle Branch Library</a>
-          <a href="policies.html">Library Policies</a>
-          <a href="board.html">Board of Trustees</a>
-          <a href="friends.html">Friends of the Library</a>
-          <a href="staff.html">Library Staff</a>
-          <a href="hiring.html">Work Here</a>
-          <a href="volunteer.html">Volunteer Opportunities</a>
+        <div class="flex flex-col pad20">
+          <h4 class="white">About Us</h4>
+          <a class="white weak" href="about.html">About the Library</a>
+          <a class="white weak" href="markle.html">Markle Branch Library</a>
+          <a class="white weak" href="policies.html">Library Policies</a>
+          <a class="white weak" href="board.html">Board of Trustees</a>
+          <a class="white weak" href="friends.html">Friends of the Library</a>
+          <a class="white weak" href="staff.html">Library Staff</a>
+          <a class="white weak" href="hiring.html">Work Here</a>
+          <a class="white weak" href="volunteer.html">Volunteer Opportunities</a>
         </div>
       </nav>
     </header>
 
-    <main class="flex">
-      <div class="flex container flex-column pad40">
-        <h1 class="display-4">Meeting & Study Rooms</h1>
-        <p class="full-text">Both the Huntington and Markle Libraries have meeting and study rooms
-          available for use by patrons, area residents, and local groups at no
-          charge.
-        </p>
-        <p class="full-text">The meeting and study rooms may be used for business or club
-          meetings, staff training, private parties or gatherings (North and
-          South Meeting Rooms only), and individual or group study or work. <strong>Any
-          commercial or for-profit event, regular business hours or client
-          meetings, and supervised visits or meetings with social workers are
-          prohibited in these rooms.</strong>
-        </p>
-        <div class="card-deck flex">
-          <div class="card">
-            <img class="card-img-top img-fluid" src="http://www.huntingtonpub.lib.in.us/wp-content/uploads/2014/03/IMG_3878.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">North Meeting Room</h5>
-              <p class="card-text">Projector, full kitchen, tables &amp; chairs.
-              </p>
-            </div>
-            <div class="card-footer flex">
-              <small class="text-muted">Huntington</small>
-              <small class="text-muted">Max Capacity: 50</small>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top img-fluid" src="http://www.huntingtonpub.lib.in.us/wp-content/uploads/2014/03/IMG_3878.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">South Meeting Room</h5>
-              <p class="card-text">Projector, sink, tables &amp; chairs.
-              </p>
-            </div>
-            <div class="card-footer flex">
-              <small class="text-muted">Huntington</small>
-              <small class="text-muted">Max Capacity: 40</small>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top img-fluid" src="http://www.huntingtonpub.lib.in.us/wp-content/uploads/2014/03/IMG_3878.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Meeting Room</h5>
-              <p class="card-text">Projector, sink, tables &amp; chairs.
-              </p>
-            </div>
-            <div class="card-footer flex">
-              <small class="text-muted">Markle</small>
-              <small class="text-muted">Max Capacity: 25</small>
-            </div>
-          </div>
-        </div>
-        <p class="full-text">A library card is not required for the use of the study rooms, but is
-          necessary to book any of our meeting rooms. This can be waved at the
-          discretion of the Library Director.
-        </p>
-        <p class="full-text">Want to book a meeting or study room? Make sure to read our entire
-          Meeting Room Policy, linked below, and then fill out our online
-          Meeting Room Request Form.
-        </p>
-        <p class="full-text"><a href="policies.html" class="btn btn-primary">Meeting Room Policy</a>
-          <a href="#" class="btn btn-success">Meeting Room Request Form</a>
-        </p>
+    <main class="flex flex-col">
+      <h1>Meeting & Study Rooms</h1>
+      <img class="full-img" src="resources/img/meeting_room_north.png"
+      alt="Tables set up in North Meeting Room.">
+      <div class="flex flex-ju-bw">
+        <!-- Main column -->
+        <section class="flex flex-col">
+          <p>
+            Both the Huntington and Markle Libraries have meeting and study
+            rooms available for use by patrons, area residents, and local groups
+            at no charge. Some of the meeting room features include ceiling-mounted
+            projectors, surround sound, a full kitchen, tables and chairs, and more.
+          </p>
+          <p>
+            The meeting and study rooms may be used for business or club meetings,
+            staff training, private parties or gatherings (North and South Meeting
+            Rooms only), and individual or group study or work. <strong>Any commercial
+            or for-profit event, regular business hours or client meetings, and
+            supervised visits or meetings with social workers are prohibited in
+            these rooms</strong>.
+          </p>
+          <p>
+            A library card is not required for the use of the study rooms, but is
+            necessary to book any of our meeting rooms. This can be waved at the
+            discretion of the Library Director.
+          </p>
+          <p>
+            Want to book a meeting or study room? Make sure to read our entire
+            <a href="policies.html">Meeting Room Policy</a> and then fill out the
+            Request a Room form.
+          </p>
+          <h2>
+            Rooms available to borrow
+          </h2>
+          <dl>
+            <dt>North Meeting Room - Huntington</dt>
+            <dd>Max capacity - 50. Full kitchen, ceiling-mounted projector,
+              tables and chairs.</dd>
+            <dt>South Meeting Room - Huntington</dt>
+            <dd>Max capacity - 40. Sink, ceiling-mounted projector, tables
+              and chairs.</dd>
+            <dt>Board Room - Huntington</dt>
+            <dd>Max capacity - 20. Tables and chairs.</dd>
+            <dt>Study Rooms - Huntington</dt>
+            <dd>Max capacity - 5. Tables and chairs.</dd>
+            <dt>Meeting Room - Markle</dt>
+            <dd>Max capacity - 25. Sink, ceiling-mounted projector, tables and
+              chairs.</dd>
+          </dl>
+        </section>
+        <!-- Sidebar -->
+        <aside class="flex flex-col">
+          <h4>Request a Room</h4>
+          <p>
+            Please fill out the form below if you'd like to request use of one
+            of our rooms. Our staff will get back with you shortly.
+          </p>
+          <form method="post">
+            <label>Name</label>
+            <input></input>
+            <label>Library card #</label>
+            <input></input>
+            <label>Organization requesting</label>
+            <input></input>
+            <label>Reason for request</label>
+            <input></input>
+            <label>Date &amp; time desired</label>
+            <input></input>
+            <label>Room desired</label>
+            <input></input>
+            <label># of attendees</label>
+            <input></input>
+            <label>Age range of attendees</label>
+            <input></input>
+            <label>Need special equipment?</label>
+            <input></input>
+            <label>Need library staff assistance?</label>
+            <input></input>
+          </form>
+        </aside>
       </div>
+
     </main>
 
-    <footer class="flex flex-column">
-      <div class="flex container">
-        <em>Your destination to learn, to discover, to gather, to grow.</em>
+    <footer class="flex container flex-col">
+      <div  id="mission" class="flex">
+        <h3>Your destination to learn, to discover, to gather, to grow.</h3>
       </div>
-      <nav class="flex container justify-between">
-        <div class="flex flex-column">
-          <h3>About Us</h3>
+      <div class="flex flex-ju-bw">
+        <div class="flex flex-col pad20">
+          <h4>About Us</h4>
           <p class="text-small">The Huntington City-Township Public Library serves the cities of
           Huntington and Markle, IN by providing an extensive collection, a
-          variety of workshops and classes, resources, and more.</p>
-          <div style="margin-bottom: 15px;">
-            <a href="http://facebook.com/hctpl" class="no-under"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
-            <a href="https://twitter.com/HCTPLibrary" class="no-under"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
-            <a href="https://pinterest.com/hctpl" class="no-under"><i class="fab fa-pinterest"></i></a>&nbsp;&nbsp;
-            <a href="https://instagram.com/hctpl" class="no-under"><i class="fab fa-instagram"></i></a>
-          </div>
+          variety of workshops and classes, resources, and more.</p><br>
+          <div class="flex" style="margin-left:5px;">
+            <a href="http://facebook.com/hctpl" class="no-under"><i class="fab fa-facebook-square fa-2x"></i></a>&nbsp;&nbsp;
+            <a href="https://twitter.com/HCTPLibrary" class="no-under"><i class="fab fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
+            <a href="https://pinterest.com/hctpl" class="no-under"><i class="fab fa-pinterest fa-2x"></i></a>&nbsp;&nbsp;
+            <a href="https://instagram.com/hctpl" class="no-under"><i class="fab fa-instagram fa-2x"></i></a>
+          </div><br>
           <p><a href="sitemap.html" class="text-small"><i class="fas fa-crosshairs"></i> Sitemap</a></p>
         </div>
-        <div class="flex flex-column">
-          <h3>Huntington Main</h3>
+        <div class="flex flex-col pad20">
+          <h4>Huntington Main</h4>
           <address class="text-small">255 W Park Dr<br>Huntington, IN 46750<br>
             Phone: <a href="tel:2603560824">(260)356-0824</a><br>
             Fax: (260)356-3073<br>
@@ -194,7 +219,7 @@
               <i class="fa fa-map-signs" aria-hidden="true"></i> Directions to Huntington
             </a>
             <br>
-          </address>
+          </address><br>
           <strong class="text-small">Open Hours:</strong>
           <p class="text-small">
             Mon-Thu: 9 a.m. - 8 p.m.<br>
@@ -202,15 +227,15 @@
             Sun: Closed
           </p>
         </div>
-        <div class="flex flex-column">
-          <h3>Markle Branch</h3>
+        <div class="flex flex-col pad20">
+          <h4>Markle Branch</h4>
           <address class="text-small">155 W Sparks St<br>Markle, IN 46770<br>
             Phone &amp; Fax: <a href="tel:2603560824">(260)758-3332</a><br>
             Email: <a href="mailto:markle@hctpl.info">markle@hctpl.info</a><br><br>
             <a href="https://goo.gl/maps/oRduSFAnNqS2">
               <i class="fa fa-map-signs" aria-hidden="true"></i> Directions to Markle
             </a><br>
-          </address>
+          </address><br>
           <strong class="text-small">Open Hours:</strong>
           <p class="text-small">
             Mon, Wed, Fri: 12 p.m. - 7 p.m.<br>
@@ -218,10 +243,10 @@
             Sun: Closed
           </p>
         </div>
-        <div class="flex flex-column">
-          <h3>Latest News</h3>
+        <div class="flex flex-col pad20">
+          <h4>Latest News</h4>
           <p class="text-small">Our weekly email newsletter is the best way to find
-          out what's happening at your library.</p>
+          out what's happening at your library.</p><br>
           <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup">
             <form action="https://hctpl.us8.list-manage.com/subscribe/post?u=b2997a5d541cd57af9bed5b8a&amp;id=e45e23e929"
@@ -229,40 +254,39 @@
             target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
             <div class="mc-field-group text-small">
-            	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-              </label>
-            	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              <label for="mce-EMAIL">Email Address<span class="asterisk">*</span>
+              </label><br>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
             <div class="mc-field-group text-small">
-            	<label for="mce-FNAME">First Name </label>
-            	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+              <label for="mce-FNAME">First Name </label><br>
+              <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
             </div>
             <div class="mc-field-group text-small">
-            	<label for="mce-LNAME">Last Name </label>
-            	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-            </div>
-            <p class="text-small"><a href="https://us8.campaign-archive.com/home/?u=b2997a5d541cd57af9bed5b8a&id=e45e23e929" title="View previous campaigns">View previous campaigns</a></p>
-            	<div id="mce-responses" class="clear">
-            		<div class="response" id="mce-error-response" style="display:none"></div>
-            		<div class="response" id="mce-success-response" style="display:none"></div>
-            	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <label for="mce-LNAME">Last Name </label><br>
+              <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            </div><br>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b2997a5d541cd57af9bed5b8a_e45e23e929" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
                 </div>
             </form>
             </div>
 
             <!--End mc_embed_signup-->
         </div>
-      </nav>
+      </div>
     </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/hctpl.js"></script>
-    <script type="text/javascript" src="js/hours.js"></script>
-
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/hctpl.js"></script>
+  <script type="text/javascript" src="js/hours.js"></script>
+
 </html>
