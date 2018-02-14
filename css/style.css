@@ -273,6 +273,27 @@ main img.img-body {
   border-radius: 3px;
 }
 
+.callout {
+  padding: 20px;
+  background-color: rgba(162, 210, 94, 0.3);
+  border: 2px solid #a3e35e;
+  border-radius: 10px;
+}
+
+.callout h4 {
+  color: #1f2f0e;
+}
+
+.callout a {
+  color: #3a660a;
+  background-color: rgba(162, 210, 94, 0.5);
+}
+
+.callout a:hover {
+  color: white;
+  background-color: #3a660a;
+}
+
 aside h4 {
   margin-bottom: 10px;
 }
