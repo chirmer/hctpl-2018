@@ -267,6 +267,12 @@ main ul {
   list-style-position: outside;
 }
 
+main img.img-body {
+  height: auto;
+  width: 100%;
+  border-radius: 3px;
+}
+
 aside h4 {
   margin-bottom: 10px;
 }
@@ -277,6 +283,7 @@ aside .btn {
   border: 2px solid #aaa;
   background-color: rgba(170, 170, 170, 0.2);
   color: #777;
+  text-align: left;
 }
 
 aside .btn:hover {
@@ -410,11 +417,18 @@ button:hover, .btn:hover {
   background-color: #2b53ad;
 }
 
-main a, footer a {
+main a, footer a:not(.no-under) {
   color: #2b53ad;
   font-weight: 700;
   background-color: rgba(43, 83, 173, 0.2);
   padding: 0 4px;
+  border-radius: 3px;
+}
+
+.no-under {
+  color: #2b53ad;
+  margin-right: 5px;
+  padding: 5px;
   border-radius: 3px;
 }
 
