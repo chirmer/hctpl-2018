@@ -36,6 +36,10 @@ h4 {
 
 /* Flexbox & page structure ------------------------------------------------- */
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -320,6 +324,14 @@ aside .btn:active {
   border: 2px solid #2b53ad;
 }
 
+.staff-photo {
+  display: inline;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 10px 10px 10px 0;
+}
+
 /* Footer ------------------------------------------------------------------- */
 
 footer {
@@ -378,6 +390,10 @@ strong {
 
 .weak {
   opacity: 0.7;
+}
+
+.pad10 {
+  padding: 10px;
 }
 
 .pad20, .btn {
