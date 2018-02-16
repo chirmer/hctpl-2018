@@ -65,6 +65,10 @@ i {
   align-items: center;
 }
 
+.flex-al-start {
+  align-items: flex-start;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -332,6 +336,12 @@ section .btn {
   background-color: rgba(43, 83, 173, 0);
 }
 
+.highlight {
+  background-color: rgba(163, 227, 94, 0.3);
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
 aside .btn {
   padding: 20px;
   margin: 10px 0;
@@ -372,6 +382,10 @@ aside .btn:active, aside .btn-green:active {
   height: 150px;
   border-radius: 75px;
   margin: 10px 10px 10px 0;
+}
+
+.staff-person {
+  min-width: 250px;
 }
 
 ul.board-list li {
@@ -444,6 +458,11 @@ strong {
 
 .pad20 {
   padding: 20px;
+}
+
+.pad50 {
+  padding: 0 50px 50px 50px;
+  flex-wrap: wrap;
 }
 
 button, .btn, input.btn {
