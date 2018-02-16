@@ -26,6 +26,10 @@ h4 {
   font-size: 1.25em;
 }
 
+i {
+  font-style: italic;
+}
+
 .blue {
   color: #2b53ad;
 }
@@ -306,6 +310,10 @@ aside h4 {
   margin-bottom: 10px;
 }
 
+section .btn {
+  display: inline;
+}
+
 aside .btn {
   padding: 20px;
   margin: 10px 0;
@@ -334,6 +342,10 @@ aside .btn:active {
   height: 150px;
   border-radius: 75px;
   margin: 10px 10px 10px 0;
+}
+
+ul.board-list li {
+  margin-bottom: 15px;
 }
 
 /* Footer ------------------------------------------------------------------- */
@@ -400,12 +412,12 @@ strong {
   padding: 10px;
 }
 
-.pad20, .btn {
+.pad20 {
   padding: 20px;
 }
 
 button, .btn, input.btn {
-  display: flex;
+  display: inline;
   align-items: center;
   border-radius: 3px;
   font-family: "Source Sans Pro", sans-serif;
