@@ -499,6 +499,18 @@ button:hover, .btn:hover {
   transition: linear 150ms;
 }
 
+.btn-red {
+  color: #ff6165;
+  background-color: rgba(255, 97, 101, 0.2);
+  border: 2px solid #ff6165;
+  padding: 10px 20px;
+}
+
+.btn-red:hover {
+  color: white;
+  background-color: #ff6165;
+}
+
 .mar20 {
   margin: 20px;
 }
