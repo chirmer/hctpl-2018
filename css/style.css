@@ -350,7 +350,6 @@ aside .btn:active, aside .btn-green:active {
 }
 
 .staff-photo {
-  display: inline;
   width: 150px;
   height: 150px;
   border-radius: 75px;
