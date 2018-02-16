@@ -314,6 +314,24 @@ section .btn {
   display: inline;
 }
 
+.db-img, .db-img img {
+  max-width: 200px;
+  background-color: white;
+}
+
+.db-img {
+  margin: 15px 15px 0 0;
+  padding: 10px;
+}
+
+.db-img:hover {
+  background-color: rgba(43, 83, 173, 0.2);
+}
+
+.db-img img:hover {
+  background-color: rgba(43, 83, 173, 0);
+}
+
 aside .btn {
   padding: 20px;
   margin: 10px 0;
