@@ -34,6 +34,10 @@ h4 {
   color: #a3e35e;
 }
 
+.red {
+  color: #ff6165;
+}
+
 /* Flexbox & page structure ------------------------------------------------- */
 
 .block {
