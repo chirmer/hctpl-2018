@@ -25,8 +25,14 @@ $(document).ready(function () {
   $('#logo').click(function() {
     window.location = "index.html";
   })
-  $('#logo-mobile').click(function() {
+  $('#logo-m').click(function() {
     window.location = "index.html";
+  })
+  $('#logo-n1').click(function () {
+    window.location = "../index.html";
+  })
+  $('#logo-m-n1').click(function () {
+    window.location = "../index.html";
   })
   // Huntington Programs show & hide
   $("#prog-htgn").click(function() {
