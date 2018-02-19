@@ -112,19 +112,54 @@
     </header>
 
     <main class="flex flex-col">
-        <h1>Blog</h1>
+        <h1 class="mar-btm">Blog</h1>
         <div class="flex flex-ju-bw">
             <!-- Main column -->
-            <section class="flex flex-col">
+            <section class="flex flex-col blog-list">
+
+                <div class="flex flex-col blog-list-item">
+                    <img src="resources/img/posts/weeding-stacks-shelves.jpg" class="full-img" 
+                    alt="Library shelves.">
+                    <a href="posts/weeding.html"><h2>Weeding: what it is and why we do it</h2></a>
+                    <div class="flex meta">
+                        <div class="flex">
+                            <i class="far fa-calendar gray"></i>&nbsp;
+                            <date>3/1/2018</date>
+                        </div>
+                        <a><div class="flex">
+                            <i class="fas fa-user-circle gray"></i>&nbsp;
+                            Beka Lemons
+                        </div></a>
+                        <a><div class="flex">
+                            <i class="fas fa-list gray"></i>&nbsp;
+                            Director's Corner
+                        </div></a>
+                    </div>
+                    <p>
+                        If you've ever seen us pulling old books off the shelves, we're 
+                        doing what's called <i>weeding</i>. Here's what that is and why 
+                        we do it. <a href="posts/weeding.html">Read more.</a>
+                    </p>
+                </div>
+
+                
 
             </section>
             <!-- Sidebar -->
-            <aside class="flex flex-col">
+            <aside class="flex flex-col blog">
                 <h3>Recent Director's Corner</h3>
                 <ul class="fa-ul">
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-info-circle blue"></i>
+                            <i class="fas fa-user-circle green"></i>
+                        </span>
+                        <a href="posts/weeding.html"><strong>Weeding: what it is and why we do it</strong></a>
+                        <br>
+                        <span class="weak txt-sm">Posted 3/1/18</span>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fas fa-user-circle green"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -132,7 +167,21 @@
                     </li>
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-info-circle blue"></i>
+                            <i class="fas fa-user-circle green"></i>
+                        </span>
+                        <strong>Post title</strong>
+                        <br>
+                        <span class="weak txt-sm">Posted 3/1/18</span>
+                    </li>
+                    <br>
+                    <br>
+                </ul>
+
+                <h3>Recent Library News</h3>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fas fa-bookmark blue"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -140,7 +189,15 @@
                     </li>
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-info-circle blue"></i>
+                            <i class="fas fa-bookmark blue"></i>
+                        </span>
+                        <strong>Post title</strong>
+                        <br>
+                        <span class="weak txt-sm">Posted 3/1/18</span>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fas fa-bookmark blue"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -154,7 +211,7 @@
                 <ul class="fa-ul">
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-info-circle blue"></i>
+                            <i class="fas fa-info-circle gray"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -162,7 +219,7 @@
                     </li>
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-info-circle blue"></i>
+                            <i class="fas fa-info-circle gray"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -170,7 +227,7 @@
                     </li>
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-info-circle blue"></i>
+                            <i class="fas fa-info-circle gray"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -179,11 +236,11 @@
                     <br>
                     <br>
                 </ul>
-                <h3>Recent Read-Alike Posts</h3>
+                <h3>If you like...</h3>
                 <ul class="fa-ul">
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-book blue"></i>
+                            <i class="fas fa-heart red"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -191,7 +248,7 @@
                     </li>
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-book blue"></i>
+                            <i class="fas fa-heart red"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -199,7 +256,7 @@
                     </li>
                     <li>
                         <span class="fa-li">
-                            <i class="fas fa-book blue"></i>
+                            <i class="fas fa-heart red"></i>
                         </span>
                         <strong>Post title</strong>
                         <br>
@@ -208,6 +265,8 @@
                     <br>
                     <br>
                 </ul>
+                <a href="posts/all.html" class="btn-green">View all posts&nbsp;
+                    <i class="fas fa-angle-double-right"></i></a>
             </aside>
         </div>
 

@@ -15,7 +15,6 @@ h1 {
 
 h2 {
   font-size: 2em;
-  margin: 40px 0 20px 0;
 }
 
 h3 {
@@ -40,6 +39,10 @@ i {
 
 .red {
   color: #ff6165;
+}
+
+.gray {
+  color: #aaa;
 }
 
 /* Flexbox & page structure ------------------------------------------------- */
@@ -188,6 +191,10 @@ header {
   display: none;
 }
 
+a img {
+  color: white;
+}
+
 /* Main content ------------------------------------------------------------- */
 
 main {
@@ -221,8 +228,24 @@ main section {
   margin-bottom: 40px;
 }
 
+.mar-btm {
+  margin-bottom: 50px;
+}
+
 main h1 {
-  margin: 50px;
+  margin: 50px 50px 20px 50px;
+}
+
+main h1 + img, main .meta + img {
+  margin: 50px 0;
+}
+
+article h1 {
+  display: none;
+}
+
+main p + h2 {
+  margin: 40px 0 20px 0;
 }
 
 main p, main ul {
@@ -392,6 +415,66 @@ ul.board-list li {
   margin-bottom: 15px;
 }
 
+ul.fa-ul li {
+  margin-left: -15px;
+  margin-bottom: 15px;
+}
+
+.blog-list-item .meta {
+  margin: 15px 0 0 0;
+  padding: 10px 0;
+}
+
+.meta div {
+  margin-right: 30px;
+}
+
+.meta a {
+  background-color: transparent;
+}
+
+.meta a:hover {
+  cursor: pointer;
+}
+
+.blog-list-item {
+  margin-bottom: 70px;
+}
+
+.blog-list-item img {
+  border-radius: 3px;
+}
+
+.blog-list-item img + a {
+  color: black;
+  background-color: transparent;
+}
+
+.blog-list-item img + a:hover {
+  cursor: pointer;
+}
+
+main h1 + .meta {
+  margin-left: 50px;
+}
+
+article {
+  padding: 0 200px 50px 200px;
+}
+
+article li strong {
+  font-size: 1.2em;
+  color: #2b53ad;
+}
+
+article .post-nav {
+  margin-top: 50px;
+}
+
+article .post-nav a {
+  padding: 20px;
+}
+
 /* Footer ------------------------------------------------------------------- */
 
 footer {
@@ -558,6 +641,22 @@ input {
   font-family: "Source Sans Pro", sans-serif;
   border-style: none;
   border: 2px solid #e9e9e9;
+}
+
+aside.blog a {
+  background-color: transparent;
+  color: #2b53ad;
+  font-size: 1.1em;
+}
+
+aside.blog a:hover {
+  background-color: #2b53ad;
+  color: white;
+}
+
+aside.blog {
+  border-left: 2px dotted #eee;
+  padding: 20px 0 0 20px;
 }
 
 /* -------------------------------------------------------------------------- */
