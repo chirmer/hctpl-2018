@@ -247,7 +247,7 @@ article h1 {
   display: none;
 }
 
-main p + h2 {
+main p + h2, .callout + h2, div.flex-ju-bw + h2 {
   margin: 40px 0 20px 0;
 }
 
@@ -281,15 +281,33 @@ dl dd:last-child {
   margin-bottom: 0;
 }
 
-main form label {
+main form label, main form fieldset legend {
   display: block;
   font-weight: 700;
   padding: 10px 0 5px 0;
   opacity: 0.6;
 }
 
-main form input {
+main form input[type="text"] {
   width: 85%;
+}
+
+main form input[type="checkbox"], main form input[type="radio"] {
+  display: inline;
+  margin: 7px 0;
+}
+
+fieldset {
+  display: flex;
+}
+
+fieldset input[type="checkbox"] {
+  display: inline;
+}
+
+main form fieldset label {
+  display: inline;
+  font-weight: 400;
 }
 
 main ol {
@@ -493,7 +511,11 @@ footer h4 {
   margin-bottom: 10px;
 }
 
-footer p, footer address, footer strong, footer input, footer label {
+footer p,
+footer address,
+footer strong,
+footer input[type="text"],
+footer label {
   font-size: 0.9em;
   line-height: 1.3em;
   padding-left: 5px;
@@ -638,7 +660,7 @@ main a:hover, footer a:hover {
   transition: linear 150ms;
 }
 
-input {
+input[type="text"] {
   border-radius: 3px;
   padding: 10px 20px;
   font-family: "Source Sans Pro", sans-serif;
