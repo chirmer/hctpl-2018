@@ -112,86 +112,114 @@
     </header>
 
     <main class="flex flex-col">
-        <h1>Request an Item</h1>
+        <h1>Your next great find</h1>
+        <img class="full-img" src="resources/img/placeholder.jpg" alt="Stack of books on table.">
         <div class="flex flex-ju-bw">
             <!-- Main column -->
             <section class="flex flex-col">
 
-                Fields marked with an asterisk(*) are required.
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim 
+                    id est laborum.
+                </p>
 
-                <form action="request-item.php" method="POST">
+                <h2>Borrow from another library</h2>
+                <p>
+                    blah blah
+                </p>
+
+                <h2>Request an item</h2>
+
+                <p>
+                    If we don't have it and neither does another loaning library, you 
+                    can ask us to buy it and add it to the collection.
+                </p>
+
+                <p>Fields marked with an asterisk(*) are required.</p>
+
+                <p>
+                    <button class="btn-green" id="btn-request">Ask us to buy something</button>
+                </p>
+
+                <form action="request-item.php" method="POST" id="request-item" class="hidden">
                     <label>Your Name*</label>
-                    <input type="text" id="name">
+                    <input type="text" name="name">
                     <label>Phone/email*</label>
-                    <input type="text" id="phone-email">
+                    <input type="text" name="phone-email">
                     <label>Library card barcode #*</label>
-                    <input type="text" id="barcode">
+                    <input type="text" name="barcode">
                     <label>Title*</label>
-                    <input type="text" id="title">
+                    <input type="text" name="title">
                     <label>Author* (if not a book, put "none")</label>
-                    <input type="text" id="author">
+                    <input type="text" name="author">
                     <fieldset>
                         <legend>Media Type*</legend>
                         <div>
-                            <input id="book" type="checkbox" value="Book">
+                            <input name="book" type="checkbox" value="Book">
                             <label for="book">Book</label>
                         </div>
                         <div>
-                            <input id="movie" type="checkbox" value="Movie">
+                            <input name="movie" type="checkbox" value="Movie">
                             <label for="movie">Movie</label>
                         </div>
                         <div>
-                            <input id="tv" type="checkbox" value="TV Series">
+                            <input name="tv" type="checkbox" value="TV Series">
                             <label for="tv">TV Series</label>
                         </div>
                         <div>
-                            <input id="music" type="checkbox" value="Music CD">
+                            <input name="music" type="checkbox" value="Music CD">
                             <label for="music">Music CD</label>
                         </div>
                         <div>
-                            <input id="audiobook" type="checkbox" value="Audiobook">
+                            <input name="audiobook" type="checkbox" value="Audiobook">
                             <label for="audiobook">Audiobook</label>
                         </div>
                         <div>
-                            <input id="lp-book" type="checkbox" value="Large Print">
+                            <input name="lp-book" type="checkbox" value="Large Print">
                             <label for="lp-book">Large Print</label>
                         </div>
                         <div>
-                            <input id="magazine" type="checkbox" value="Magazine">
+                            <input name="magazine" type="checkbox" value="Magazine">
                             <label for="magazine">Magazine</label>
                         </div>
                         <div>
-                            <input id="videogame" type="checkbox" value="Video Game">
+                            <input name="videogame" type="checkbox" value="Video Game">
                             <label for="videogame">Video Game</label>
                         </div>
                     </fieldset>
                     <label>Series Name (if applicable)</label>
-                    <input type="text" id="series">
+                    <input type="text" name="series">
                     <label>Age Range</label>
-                    <input type="text" id="age-range">
+                    <input type="text" name="age-range">
                     <label>ISBN</label>
-                    <input type="text" id="isbn">
+                    <input type="text" name="isbn">
                     <label>Subject Request (if you'd like items similar to this one)</label>
-                    <input type="text" id="subject">
+                    <input type="text" name="subject">
                     <fieldset>
                         <legend>Would you like to be placed on Hold for this item?*</legend>
                         <div>
-                            <input id="hold-yes" type="radio" value="Yes">
+                            <input name="hold-yes" type="radio" value="Yes">
                             <label for="hold-yes">Yes</label>
                         </div>
                         <div>
-                            <input id="hold-no" type="radio" value="No">
+                            <input name="hold-no" type="radio" value="No">
                             <label for="hold-no">No</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>If so, at which library do you want to pick it up?</legend>
                         <div>
-                            <input id="hold-htgn" type="radio" value=" - Huntington">
+                            <input name="hold-htgn" type="radio" value=" - Huntington">
                             <label for="hold-htgn">Huntington</label>
                         </div>
                         <div>
-                            <input id="hold-mkl" type="radio" value=" - Markle">
+                            <input name="hold-mkl" type="radio" value=" - Markle">
                             <label for="hold-mkl">Markle</label>
                         </div>
                     </fieldset><br>
@@ -203,15 +231,33 @@
             <!-- Sidebar -->
             <aside class="flex flex-col">
 
-                <h3>Quick links</h3>
+                <h3>Borrow from another library</h3>
                 <p>
-                    Here are the most popular pages on our website:
+                    If you're not sure you want to request an item for purchase, you have 
+                    a few other options for getting what you need.
                 </p>
-                <a href="#" class="btn">Quick link</a>
-                <a href="#" class="btn">Quick link</a>
-                <a href="#" class="btn">Quick link</a>
-                <a href="#" class="btn">Quick link</a>
-                <a href="#" class="btn">Quick link</a>
+                <a href="#" class="btn">Inter-Library Loan (ILL)</a>
+                <br><br>
+                <h3>Explore the world of reading &amp; watching</h3>
+                <p>
+                    Here are the most popular pages and online resources for finding 
+                    what to read or watch next.
+                </p>
+                <h4>Books</h4>
+                <p><a href="#">Link</a></p>
+                <p><a href="#">Link</a></p>
+                <p><a href="#">Link</a></p>
+
+                <h4>Movies &amp; TV</h4>
+                <p>
+                    <a href="#">Link</a>
+                </p>
+                <p>
+                    <a href="#">Link</a>
+                </p>
+                <p>
+                    <a href="#">Link</a>
+                </p>
 
             </aside>
         </div>

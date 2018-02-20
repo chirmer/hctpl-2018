@@ -43,6 +43,12 @@ $(document).ready(function () {
     $(".cal-day.btn-primary").toggleClass("hidden");
   });
 
+  $("#btn-request").click(function () {
+    $("#request-item").toggleClass("hidden");
+  });
+
+
+
   // Calendar code -------------------------------------------------------------
 
 

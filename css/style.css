@@ -290,6 +290,7 @@ main form label, main form fieldset legend {
 
 main form input[type="text"] {
   width: 85%;
+  font-size: 1em;
 }
 
 main form input[type="checkbox"], main form input[type="radio"] {
