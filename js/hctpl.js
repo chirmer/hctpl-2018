@@ -51,47 +51,8 @@ $(document).ready(function () {
 
   // Calendar code -------------------------------------------------------------
 
-
-  $("#filter-htgn").click(function() {
-    $("#filter-htgn").toggleClass("list-group-item-primary");
-    $(".ev-h").toggleClass("hidden");
-    $("#filter-htgn .fa-check").toggleClass("invisible");
-  });
-
-  $("#filter-mkl").click(function() {
-    $("#filter-mkl").toggleClass("list-group-item-success");
-    $(".ev-m").toggleClass("hidden");
-    $("#filter-mkl .fa-check").toggleClass("invisible");
-  });
-
-  $("#filter-adult").click(function() {
-    $("#filter-adult").toggleClass("list-group-item-secondary");
-    $(".event").not(".ev-a").toggleClass("hidden");
-    $("#filter-adult .fa-check").toggleClass("invisible");
-  });
-
-  $("#filter-teen").click(function() {
-    $("#filter-teen").toggleClass("list-group-item-secondary");
-    $(".event").not(".ev-t").toggleClass("hidden");
-    $("#filter-teen .fa-check").toggleClass("invisible");
-  });
-
-  $("#filter-youth").click(function() {
-    $("#filter-youth").toggleClass("list-group-item-secondary");
-    $(".event").not(".ev-y").toggleClass("hidden");
-    $("#filter-youth .fa-check").toggleClass("invisible");
-  });
-
-  $(function(){
-    $('.card-subtitle').each(function(key,value){
-        console.log(value);
-        var currentDate = new Date();
-        var date = new Date(value);
-        if(date < currentDate){
-            $(value).parent().parent().remove();
-        }
-    });
-});
+  
+  
 });
 
 // https://www.google.com/search?&q=site%3Ahuntingtonpub.lib.in.us+

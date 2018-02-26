@@ -46,6 +46,19 @@ i {
   color: #aaa;
 }
 
+hr {
+  border: 1px dashed #ddd;
+  width: 100%;
+}
+
+.small-caps {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
 /* Flexbox & page structure ------------------------------------------------- */
 
 .block {
@@ -498,6 +511,7 @@ article .post-nav a {
   padding: 20px;
 }
 
+
 /* Footer ------------------------------------------------------------------- */
 
 footer {
@@ -573,6 +587,10 @@ strong {
 .pad50 {
   padding: 0 50px 50px 50px;
   flex-wrap: wrap;
+}
+
+.no-img {
+  margin-bottom: 30px;
 }
 
 button, .btn, input.btn {
@@ -684,6 +702,60 @@ aside.blog a:hover {
 aside.blog {
   border-left: 2px dotted #eee;
   padding: 20px 0 0 20px;
+}
+
+aside p+h3 {
+  margin-top: 30px;
+}
+
+aside h3+.event-h {
+  margin-top: 20px;
+}
+
+.date {
+  margin: 10px 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.event-m+h2,
+.event-h+h2,
+.event-o+h2 {
+  margin-top: 30px;
+}
+
+.event-h,
+.event-m,
+.event-o {
+  padding: 5px 0 0 15px;
+  margin: 5px 0;
+}
+
+.event-m p, 
+.event-h p,
+.event-o p {
+  margin: 5px 0 0 0;
+}
+
+.event-h {
+  border-left: 10px solid #2b53ad;
+}
+
+.event-m {
+  /*background-color: rgba(163, 227, 94, 0.2);*/
+  border-left: 10px solid #a3e35e;
+}
+
+.event-o {
+  border-left: 10px solid #999;
+}
+
+#month2,
+#month3,
+#month4 {
+  margin-top: 50px;
 }
 
 /* -------------------------------------------------------------------------- */
