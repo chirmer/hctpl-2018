@@ -23,25 +23,17 @@ $(document).ready(function () {
   });
   // Site home link
   $('#logo').click(function() {
-    window.location = "index.html";
+    window.location = "http://beta.hctpl.info";
   })
   $('#logo-m').click(function() {
-    window.location = "index.html";
+    window.location = "http://beta.hctpl.info";
   })
   $('#logo-n1').click(function () {
-    window.location = "../index.html";
+    window.location = "http://beta.hctpl.info";
   })
   $('#logo-m-n1').click(function () {
-    window.location = "../index.html";
+    window.location = "http://beta.hctpl.info";
   })
-  // Huntington Programs show & hide
-  $("#prog-htgn").click(function() {
-    $(".cal-day.btn-success").toggleClass("hidden");
-  });
-  // Markle Programs show & hide
-  $("#prog-mkl").click(function() {
-    $(".cal-day.btn-primary").toggleClass("hidden");
-  });
 
   $("#btn-request").click(function () {
     $("#request-item").toggleClass("hidden");
@@ -51,7 +43,22 @@ $(document).ready(function () {
 
   // Calendar code -------------------------------------------------------------
 
-  
+  $("#event-child").click(function () {
+    $(".event-teen").toggleClass("hidden");
+    $(".event-adult").toggleClass("hidden");
+    $("#event-child").toggleClass("btn-green");
+  });
+  $("#event-teen").click(function () {
+    $(".event-child").toggleClass("hidden");
+    $(".event-adult").toggleClass("hidden");
+    $("#event-teen").toggleClass("btn-green");
+  });
+  $("#event-adult").click(function () {
+    $(".event-teen").toggleClass("hidden");
+    $(".event-child").toggleClass("hidden");
+    $("#event-adult").toggleClass("btn-green");
+  });
+
   
 });
 

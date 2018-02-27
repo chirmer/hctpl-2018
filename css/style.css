@@ -265,9 +265,14 @@ main p + h2, .callout + h2, div.flex-ju-bw + h2 {
   margin: 40px 0 20px 0;
 }
 
-main p, main ul {
+main p {
   line-height: 1.6em;
   margin: 10px 0;
+}
+
+main ul {
+  line-height: 1.6em;
+  margin: 10px 0px 10px 40px;
 }
 
 dl {
@@ -302,7 +307,9 @@ main form label, main form fieldset legend {
   opacity: 0.6;
 }
 
-main form input[type="text"] {
+ main input[type="text"],
+ main textarea, 
+ main input[type="email"] {
   width: 85%;
   font-size: 1em;
 }
@@ -359,7 +366,7 @@ main img.img-body {
   color: #1f2f0e;
 }
 
-.callout a {
+.callout a, .event-m a {
   color: #3a660a;
   background-color: rgba(162, 210, 94, 0.5);
 }
@@ -680,7 +687,7 @@ main a:hover, footer a:hover {
   transition: linear 150ms;
 }
 
-input[type="text"] {
+input[type="text"], textarea, input[type="email"] {
   border-radius: 3px;
   padding: 10px 20px;
   font-family: "Source Sans Pro", sans-serif;
@@ -801,6 +808,10 @@ aside h3+.event-h {
   main aside {
     width: 85%;
     margin: 50px auto 0 auto;
+  }
+
+  h1 {
+    margin: 20px 0;
   }
 
   #search-box, #full-nav {
